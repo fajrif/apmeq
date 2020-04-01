@@ -1,0 +1,40 @@
+<!-- Start Team Area -->
+<div class="bk-team-area pt--60 pb_sm--5 bg_color--1">
+		<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="team-heading d-flex justify-content-between wow move-up">
+							<div class="heading-left">
+								<h3 class="theme-color">Horses</h3>
+							</div>
+							<div class="heading-right">
+								<button>See all <i class="fa fa-arrow-right"></i> </button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<% @horses.each do |horse| %>
+						<!-- Start Single Team -->
+						<div class="col-lg-3 col-md-6 col-sm-6 col-12 wow move-up">
+							<div class="team team_style--1">
+								<!-- Image Wrap -->
+								<div class="image-wrap">
+									<div class="thumb">
+										<%= image_tag(horse.images.first.variant(resize: "370x370").processed) %>
+										<div class="overlay"></div>
+									</div>
+								</div>
+								<!-- Team Info -->
+								<div class="info">
+									<h6 class="name"><%= horse.name %></h6>
+									<span class="position"><%= horse.breed %></span>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Team -->
+					<% end %>
+				</div>
+		</div>
+</div>
+<!-- End Team Area -->

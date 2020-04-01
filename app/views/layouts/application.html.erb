@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- Enable zoom on mobile device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="<%= content_for?(:description) ? yield(:description) : configatron.site_description %>">
+	<meta name="author" content="Galo Solutions">
+	<title><%= content_for?(:title) ? yield(:title) : configatron.site_name %></title>
+	<!-- fevicon -->
+  <link rel="shortcut icon" type="image/png" href="<%= image_url('favicon.png') %>">
+	<!-- Google fonts -->
+	<%= csrf_meta_tags %>
+	<%= csp_meta_tag %>
+	<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= yield :head %>
+</head>
+<body class="template-color-1 template-font-2">
+	<!-- Wrapper -->
+	<div id="wrapper" class="wrapper">
+		<%= render "shared/header" %>
+		<!-- Page Conttent -->
+		<main class="page-content">
+			<%= yield %>
+			<%= render "shared/upcoming_events" %>
+		</main>
+		<!--// Page Conttent -->
+		<%= render "shared/footer" %>
+	</div>
+	<!--// Wrapper -->
+	<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	<%= yield :tail %>
+</body>
+</html>

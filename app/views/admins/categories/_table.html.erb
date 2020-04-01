@@ -1,0 +1,31 @@
+<p><small><%= "Display total #{@categories.count} categories" %></small></p>
+
+<table class="table display product-overview mb-30">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Count</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for category in @categories %>
+      <tr>
+				<td><%= category.id %></td>
+				<td><strong><%= link_to category.name, admins_category_path(category) %></strong></td>
+				<td><%= category.articles.count %></td>
+        <td class="actions">
+					<%= link_to admins_category_path(category), "data-toggle" => "tooltip", :title => "Edit" do %>
+						<i class="fa fa-pencil"></i>
+					<% end %>
+					<%= link_to admins_category_path(category), :confirm => 'Are you sure?', :method => :delete, :class => 'text-inverse' do %>
+						<i class="fa fa-trash"></i>
+					<% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= paginate @categories %>

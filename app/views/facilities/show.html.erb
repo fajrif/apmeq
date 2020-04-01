@@ -1,0 +1,49 @@
+<!-- Start Portfolio Details -->
+<div class="brook-portfolio-details pt--100 bg_color--1">
+		<div class="container">
+				<div class="row pt--100 pb--80">
+						<!-- Portfolio Left -->
+						<div class="col-lg-4 col-12">
+								<div class="portfolio-left bk-portfolio-details">
+										<div class="portfolio-main-info">
+											<h3 class="heading heading-h3 line-height-1-42"><%= @facility.name %></h3>
+												<div class="portfolio-content mt--75 mb--75 mt_md--40 mb_md--40 mt_sm--40 mb_sm--40">
+														<h6 class="heading heading-h6">About Facility</h6>
+														<div class="desc mt--20">
+																<p class="bk_pra">
+																	<%= @facility.description %>
+																</p>
+														</div>
+												</div>
+												<!-- Start Details List -->
+												<div class="portfolio-details-list">
+
+														<div class="details-list">
+																<label>Category</label>
+																<span><%= @facility.category_name.titleize %></span>
+														</div>
+														<div class="details-list">
+																<span><%= link_to "View All", facilities_path %></span>
+														</div>
+
+												</div>
+												<!-- End Details List -->
+										</div>
+								</div>
+						</div>
+
+						<!-- Portfolio Right -->
+						<div class="col-lg-8 col-12 mt_md--40 mt_sm--40 pl--100 pl_md--15 pl_sm--15 pr_md--15 pr_sm--15">
+								<div class="portfolio-right portfolio-details-gallery text-center text-md-right">
+										<!-- Start Portfolio Image -->
+										<div class="portfolio-image mb--50">
+												<%= image_tag(@facility.image.variant(resize: "670x447").processed, :class => "w-100") %>
+										</div>
+										<!-- End Portfolio Image -->
+								</div>
+						</div>
+
+				</div>
+		</div>
+</div>
+<!-- End Portfolio Details -->

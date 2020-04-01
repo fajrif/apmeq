@@ -1,0 +1,31 @@
+<p><small><%= "Display total #{@banners.count} banners" %></small></p>
+
+<table class="table display product-overview mb-30">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Image</th>
+      <th>Captions</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for banner in @banners %>
+      <tr>
+				<td><strong><%= link_to banner.id, admins_banner_path(banner) %></strong></td>
+				<td><%= image_tag banner.image.variant(resize: "100x100").processed %></td>
+				<td><%= banner.caption_text %></td>
+        <td class="actions">
+					<%= link_to admins_banner_path(banner), "data-toggle" => "tooltip", :title => "Edit" do %>
+						<i class="fa fa-pencil"></i>
+					<% end %>
+          <%= link_to admins_banner_path(banner), :confirm => 'Are you sure?', :method => :delete, :class => 'text-inverse' do %>
+						<i class="fa fa-trash"></i>
+					<% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= paginate @banners %>

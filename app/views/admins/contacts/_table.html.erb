@@ -1,0 +1,19 @@
+<p><small><%= "Display total #{@contacts.count} contacts" %></small></p>
+
+<table class="table display product-overview mb-30">
+	<thead>
+		<tr>
+			<th>From</th>
+			<th>Received</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% for contact in @contacts %>
+			<tr>
+				<td><%= link_to "#{contact.name} (#{contact.email})", admins_contact_path(contact), style: "font-weight:600" %></td>
+				<td><%= contact.created_at.to_s(:long) %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+<%= paginate @contacts %>

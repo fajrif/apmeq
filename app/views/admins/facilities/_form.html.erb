@@ -1,0 +1,22 @@
+<%= simple_form_for [:admins, @facility], :html => { :class => 'form-horizontal' } do |f| %>
+	<%= f.error_notification %>
+	<div class="form-body">
+		<%= f.input :image, as: :file %>
+		<%= f.input :name %>
+		<%= f.input :category_name, as: :select, collection: [['facility', 'Facility'], ['livery', 'Livery']], label_method: :second, value_method: :first %>
+		<%= f.input :description, as: :text, input_html: { rows: "20" } %>
+		<%= f.association :event %>
+		<div class="form-actions">
+			<div class="row">
+				<div class="offset-md-3 col-md-9">
+					<%= f.button :submit, :class => 'btn btn-primary' %>
+					<% unless @facility.new_record? %>
+					<%= link_to "Cancel", admins_facility_path(@facility), :class => 'btn' %>
+					<% else %>
+					<%= link_to "Cancel", admins_facilities_path, :class => 'btn' %>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+<% end %>

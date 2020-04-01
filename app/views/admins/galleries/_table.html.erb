@@ -1,0 +1,31 @@
+<p><small><%= "Display total #{@galleries.count} galleries" %></small></p>
+
+<table class="table display product-overview mb-30">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Image</th>
+      <th>Caption</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for gallery in @galleries %>
+      <tr>
+				<td><%= gallery.id %></td>
+				<td><%= image_tag gallery.image.variant(resize: "100x100").processed %></td>
+				<td><%= truncate_paragraph(gallery.caption, 100) %></td>
+        <td class="actions">
+					<%= link_to admins_gallery_path(gallery), "data-toggle" => "tooltip", :title => "Edit" do %>
+						<i class="fa fa-pencil"></i>
+					<% end %>
+					<%= link_to admins_gallery_path(gallery), :confirm => 'Are you sure?', :method => :delete, :class => 'text-inverse' do %>
+						<i class="fa fa-trash"></i>
+					<% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= paginate @galleries %>

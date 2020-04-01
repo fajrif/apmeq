@@ -1,0 +1,58 @@
+<div class="page-bar">
+	<div class="page-title-breadcrumb">
+		<div class=" pull-left">
+			<div class="page-title">Testimonial Details</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12 col-sm-12">
+		<div class="card card-box">
+			<div class="card-body ">
+				<div class="form-horizontal">
+					<div class="form-body">
+						<div class="form-group row">
+							<label class="control-label col-md-3">ID</label>
+							<div class="col-md-5">
+								<%= @testimonial.id %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Title</label>
+							<div class="col-md-5">
+								<%= @testimonial.title %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Name</label>
+							<div class="col-md-5">
+								<%= @testimonial.name %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Comment</label>
+							<div class="col-md-5">
+								<%= raw @testimonial.comment %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Image</label>
+							<div class="col-md-5">
+								<%= image_tag @testimonial.image.variant(resize: "379x252").processed %>
+							</div>
+						</div>
+						<div class="form-actions">
+							<div class="row">
+								<div class="offset-md-3 col-md-9">
+									<%= link_to 'Edit', edit_admins_testimonial_path(@testimonial), :class => 'btn btn-warning' %>
+									<%= link_to 'Destroy', admins_testimonial_path(@testimonial), :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-danger' %>
+									<%= link_to 'View All', admins_testimonials_path, :class => 'btn' %>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

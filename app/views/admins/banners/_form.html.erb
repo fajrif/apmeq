@@ -1,0 +1,22 @@
+<%= simple_form_for [:admins, @banner], :html => { :class => 'form-horizontal' } do |f| %>
+	<%= f.error_notification %>
+	<div class="form-body">
+		<%= f.input :image, as: :file %>
+		<%= f.input :caption1 %>
+		<%= f.input :caption2 %>
+		<%= f.input :caption3 %>
+		<%= f.input :description, as: :text, input_html: { rows: "10" } %>
+		<div class="form-actions">
+			<div class="row">
+				<div class="offset-md-3 col-md-9">
+					<%= f.button :submit, :class => 'btn btn-primary' %>
+					<% unless @banner.new_record? %>
+					<%= link_to "Cancel", admins_banner_path(@banner), :class => 'btn' %>
+					<% else %>
+					<%= link_to "Cancel", admins_banners_path, :class => 'btn' %>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+<% end %>

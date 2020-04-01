@@ -1,0 +1,33 @@
+<p><small><%= "Display total #{@articles.count} articles" %></small></p>
+
+<table class="table display product-overview mb-30">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Image</th>
+      <th>Category</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for article in @articles %>
+      <tr>
+				<td><%= article.id %></td>
+				<td><strong><%= link_to article.title, admins_article_path(article) %></strong></td>
+				<td><%= image_tag article.image.variant(resize: "100x100").processed %></td>
+				<td><%= article.category.name %></td>
+        <td class="actions">
+					<%= link_to admins_article_path(article), "data-toggle" => "tooltip", :title => "Edit" do %>
+						<i class="fa fa-pencil"></i>
+					<% end %>
+          <%= link_to admins_article_path(article), :confirm => 'Are you sure?', :method => :delete, :class => 'text-inverse' do %>
+						<i class="fa fa-trash"></i>
+					<% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= paginate @articles %>

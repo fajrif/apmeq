@@ -1,0 +1,18 @@
+<aside class="sidebar">
+	<div class="_block popular">
+		<h3 class="block_title">Recent Posts</h3>
+		<div class="_items">
+			<% @recent_articles.each do |article| %>
+				<a href="<%= get_news_path(article) %>" class="item">
+					<div class="img ie-img">
+						<%= image_tag(url_for(article.image.variant(resize: "350x350").processed)) %>
+					</div>
+					<h4 class="_title">
+						<%= article.title %>
+					</h4>
+					<div class="date"><%= article.created_at.to_time.strftime("%b %d, %Y") %></div>
+				</a>
+			<% end %>
+		</div>
+	</div>
+</aside>

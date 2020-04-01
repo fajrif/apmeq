@@ -1,0 +1,75 @@
+<!-- Start Contact Area -->
+<div class="bk-contact-area section-pb-xl bg_color--1">
+		<div class="container">
+				<div class="row">
+						<!-- Start Address -->
+						<div class="col-xl-3 col-lg-3 col-12">
+								<div class="address-inner">
+										<div class="address wow move-up">
+												<h3 class="heading">Visit us at</h3>
+												<p><%= configatron.company_address %></p>
+										</div>
+
+										<div class="address mt--60 mb--60 wow move-up">
+												<h3 class="heading">Message us</h3>
+												<p><a href="mailto:<%= configatron.company_email %>"><%= configatron.company_email %></a></p>
+												<p><a href="tel:<%= configatron.company_phone %>"><%= configatron.company_phone %></a></p>
+										</div>
+
+										<ul class="social-icon icon-size-medium text-dark text-left tooltip-layout move-up wow">
+												<li class="facebook"><a href="<%= configatron.social_facebook_url %>" class="link hint--bounce hint--top hint--theme" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+												<li class="twitter"><a href="<%= configatron.social_twitter_url %>" class="link hint--bounce hint--top hint--theme" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+												<li class="instagram"><a href="<%= configatron.social_instagram_url %>" class="link hint--bounce hint--top hint--theme" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+												<li class="youtube"><a href="<%= configatron.social_youtube_url %>" class="link hint--bounce hint--top hint--theme" aria-label="Youtube"><i class="fab fa-youtube"></i></a></li>
+												<li class="google"><a href="<%= configatron.social_google_plus_url %>" class="link hint--bounce hint--top hint--theme" aria-label="Google"><i class="fab fa-google"></i></a></li>
+										</ul>
+
+								</div>
+						</div>
+						<!-- Start COntact Form -->
+						<div class="col-xl-8 offset-xl-1 col-lg-9 col-12 mt_md--40 mt_sm--40">
+								<div class="contact-form">
+										<%= flash_message %>
+										<%= form_tag contact_path, { :method => :post, :class => "form-style--1 wow move-up" } do %>
+												<div class="row">
+														<div class="col-lg-6">
+																<div class="input-box">
+																		<span class="form-icon far fa-user"></span>
+																		<input name="contact[name]" type="text" placeholder="Name *">
+																</div>
+														</div>
+														<div class="col-lg-6">
+																<div class="input-box">
+																		<span class="form-icon far fa-envelope"></span>
+																		<input name="contact[email]" type="email" placeholder="Email *">
+																</div>
+														</div>
+														<div class="col-lg-12">
+																<div class="input-box">
+																		<span class="form-icon fas fa-mobile-alt"></span>
+																		<input type="text" name="contact[phone]" placeholder="Phone number">
+																</div>
+														</div>
+														<div class="col-lg-12">
+																<div class="input-box">
+																	<textarea name="contact[message]" placeholder="Your message"></textarea>
+																</div>
+														</div>
+														<div class="col-lg-12">
+																<div class="form-action">
+																		<div class="form-description">
+																				Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																		</div>
+																		<div class="form-submit">
+																				<input type="submit" value="Send message">
+																		</div>
+																</div>
+														</div>
+												</div>
+										<% end %>
+								</div>
+						</div>
+				</div>
+		</div>
+</div>
+<!-- End Contact Area -->

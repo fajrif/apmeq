@@ -1,0 +1,33 @@
+<div class="page blog with-sidebar left-sidebar">
+	<div class="wrap">
+		<div class="wrap_float">
+			<div class="title-block">
+				<h1 class="title">News & Events</h1>
+			</div>
+			<div class="page_content posts">
+				<main class="main">
+					<div class="post-image ie-img">
+						<%= image_tag(url_for(@article.image)) %>
+					</div>
+					<div class="post-head">
+						<div class="category">
+						</div>
+						<h2 class="title">
+							<%= @article.title %>
+						</h2>
+						<div class="author">
+							<div class="name"><%= @article.created_at.to_time.strftime("%b %d, %Y") %></div>
+						</div>
+					</div>
+					<div class="post-body _content">
+						<p>
+							<%= raw @article.description %>
+						</p>
+					</div>
+				</main>
+				<%= render "sidebar" %>
+			</div>
+		</div>
+	</div>
+</div>
+

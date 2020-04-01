@@ -1,0 +1,64 @@
+<div class="page-bar">
+	<div class="page-title-breadcrumb">
+		<div class=" pull-left">
+			<div class="page-title">Banner details</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12 col-sm-12">
+		<div class="card card-box">
+			<div class="card-body ">
+				<div class="form-horizontal">
+					<div class="form-body">
+						<div class="form-group row">
+							<label class="control-label col-md-3">ID</label>
+							<div class="col-md-5">
+								<%= @banner.id %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Image</label>
+							<div class="col-md-5">
+								<%= image_tag @banner.image.variant(resize: "379x252").processed %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Caption 1</label>
+							<div class="col-md-5">
+								<%= @banner.caption1 %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Caption 2</label>
+							<div class="col-md-5">
+								<%= @banner.caption2 %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Caption 3</label>
+							<div class="col-md-5">
+								<%= @banner.caption3 %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Description</label>
+							<div class="col-md-5">
+								<%= raw @banner.description %>
+							</div>
+						</div>
+						<div class="form-actions">
+							<div class="row">
+								<div class="offset-md-3 col-md-9">
+									<%= link_to 'Edit', edit_admins_banner_path(@banner), :class => 'btn btn-warning' %>
+									<%= link_to 'Destroy', admins_banner_path(@banner), :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-danger' %>
+									<%= link_to 'View All', admins_banners_path, :class => 'btn' %>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

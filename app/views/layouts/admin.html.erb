@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title><%= content_for?(:title) ? "#{configatron.site_name} - #{yield(:title)}" : configatron.site_name %></title>
+	<!-- fevicon -->
+	<link rel="shortcut icon" type="image/png" href="<%= image_url('favicon.png') %>">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
+
+	<%= stylesheet_link_tag 'admin', :media => "all" %>
+	<%= csrf_meta_tag %>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<%= yield :head %>
+</head>
+<body class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white white-sidebar-color logo-white">
+	<%= render "admins/shared/header" %>
+	<div class="page-wrapper">
+		<!-- start page container -->
+		<div class="page-container">
+			<%= render "admins/shared/sidebar" %>
+			<div class="page-content-wrapper">
+				<div class="page-content">
+					<%= flash_message %>
+					<%= yield %>
+				</div>
+			</div>
+		</div>
+		<!-- end page container -->
+		<%= render "admins/shared/footer" %>
+	</div>
+	<%= javascript_include_tag 'admin' %>
+	<%= yield :tail %>
+</body>
+</html>

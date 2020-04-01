@@ -1,0 +1,33 @@
+<p><small><%= "Display total #{@testimonials.count} testimonials" %></small></p>
+
+<table class="table display product-overview mb-30">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Title</th>
+      <th>Image</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for testimonial in @testimonials %>
+      <tr>
+				<td><%= testimonial.id %></td>
+				<td><strong><%= link_to testimonial.name, admins_testimonial_path(testimonial) %></strong></td>
+				<td><%= testimonial.title %></td>
+				<td><%= image_tag testimonial.image.variant(resize: "100x100").processed %></td>
+        <td class="actions">
+					<%= link_to admins_testimonial_path(testimonial), "data-toggle" => "tooltip", :title => "Edit" do %>
+						<i class="fa fa-pencil"></i>
+					<% end %>
+          <%= link_to admins_testimonial_path(testimonial), :confirm => 'Are you sure?', :method => :delete, :class => 'text-inverse' do %>
+						<i class="fa fa-trash"></i>
+					<% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= paginate @testimonials %>

@@ -1,0 +1,56 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require bootstrap.min.css
+ *= require revolution.css
+ *= require fontawesome-free.css
+ *= require meanmenu.css
+ *= require slick.min.css
+ *= require ionicons.css
+ *= require cerebrisans.css
+ *= require lauis.css
+ *= require swiper.css
+ *= require linea-font.css
+ *= require count-flip.css
+ *= require animation.css
+ *= require lightbox.css
+ *= require justify.css
+ *= require animated-text.css
+ *= require jquery-ui.css
+ *= require plyr.css
+ *= require style.css
+ *= require custom.css
+ *= require_self
+*/
+
+.alert {
+	margin-top: 1rem;
+	border: 1.2px solid #C27433 !important;
+}
+.alert-danger, .alert-success {
+	color: #fff !important;
+	font-weight: 600 !important;
+	border-color: #C27433 !important;
+}
+.alert-danger {
+	background-color: #822a2a !important;
+}
+.alert-success {
+	background-color: #497f7c !important;
+}
+.close {
+	font-size: 1.1rem !important;
+	line-height: 1.2 !important;
+	color: #fff !important;
+	text-shadow: 0 1px 0 #000 !important;
+}
+

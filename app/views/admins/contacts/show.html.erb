@@ -1,0 +1,64 @@
+<div class="page-bar">
+	<div class="page-title-breadcrumb">
+		<div class=" pull-left">
+			<div class="page-title">View Contact Message</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12 col-sm-12">
+		<div class="card card-box">
+			<div class="card-body ">
+				<div class="form-horizontal">
+					<div class="form-body">
+						<div class="form-group row">
+							<label class="control-label col-md-3">ID</label>
+							<div class="col-md-5">
+								<%= @contact.id %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Name</label>
+							<div class="col-md-5">
+								<%= @contact.name %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Email Address</label>
+							<div class="col-md-5">
+								<a href="mailto:<%= @contact.email %>"> <%= @contact.email %></a>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Phone</label>
+							<div class="col-md-5">
+								<%= @contact.phone %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Message</label>
+							<div class="col-md-5">
+								<%= @contact.message %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Created at</label>
+							<div class="col-md-5">
+								<%= @contact.created_at.to_s(:long) %>
+							</div>
+						</div>
+						<div class="form-actions">
+							<div class="row">
+								<div class="offset-md-3 col-md-9">
+									<%= link_to 'Destroy', admins_contact_path(@contact), :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-danger' %>
+									<%= link_to 'View All', admins_contacts_path, :class => 'btn' %>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

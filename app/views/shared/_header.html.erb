@@ -1,0 +1,62 @@
+<!-- Header -->
+<header class="br_header header-default header-transparent pt--15 light-logo--version <%= 'pages' unless is_home_page? or is_contact_page? or is_info_page? %> haeder-fixed-width headroom--sticky header-mega-menu clearfix">
+		<div class="container-fluid">
+				<div class="row">
+						<div class="col-12">
+								<div class="header__wrapper mr--0">
+										<!-- Header Left -->
+										<div class="header-left flex-20">
+												<div class="logo">
+														<%= link_to root_path do %>
+															<%= image_tag('logo.png') %>
+														<% end %>
+												</div>
+										</div>
+										<!-- Mainmenu Wrap -->
+										<div class="header-flex-right flex-80">
+												<div class="mainmenu-wrapper have-not-flex d-none d-lg-block">
+														<nav class="page_nav">
+																<ul class="mainmenu">
+																	<li class="lavel-1"><a href="<%= root_path %>"><span>Home</span></a></li>
+																	<li class="lavel-1"><a href="<%= about_path %>"><span>About</span></a></li>
+																	<li class="lavel-1"><a href="<%= first_riding_school_path %>"><span>Riding</span></a></li>
+																	<li class="lavel-1"><a href="<%= facilities_path %>"><span>Facilities</span></a></li>
+																	<li class="lavel-1"><a href="<%= services_path %>"><span>Services</span></a></li>
+																	<li class="lavel-1"><a href="<%= news_path %>"><span>News & Events</span></a></li>
+																	<li class="lavel-1"><a href="<%= contact_path %>"><span>Contact Us</span></a></li>
+																</ul>
+														</nav>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+</header>
+<!--// Header -->
+
+<!-- Start Popup Menu -->
+<div class="popup-mobile-manu popup-mobile-visiable">
+		<div class="inner">
+				<div class="mobileheader">
+						<div class="logo">
+								<%= link_to root_path do %>
+									<%= image_tag('logo.png') %>
+								<% end %>
+						</div>
+						<a class="mobile-close" href="#"></a>
+				</div>
+				<div class="menu-content">
+						<ul class="menulist object-custom-menu">
+							<li class="no-menu"><a href="<%= root_path %>">Home</a></li>
+							<li class="no-menu"><a href="<%= about_path %>">About</a></li>
+							<li class="no-menu"><a href="<%= first_riding_school_path %>">Riding</a></li>
+							<li class="no-menu"><a href="<%= facilities_path %>">Facilities</a></li>
+							<li class="no-menu"><a href="<%= services_path %>">Services</a></li>
+							<li class="no-menu"><a href="<%= news_path %>">News & Events</a></li>
+							<li class="no-menu"><a href="<%= contact_path %>">Contact Us</a></li>
+						</ul>
+				</div>
+		</div>
+</div>
+<!-- End Popup Menu -->

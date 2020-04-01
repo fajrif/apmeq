@@ -1,0 +1,66 @@
+<!-- start sidebar menu -->
+<div class="sidebar-container">
+	<div class="sidemenu-container navbar-collapse collapse fixed-menu">
+		<div id="remove-scroll" class="left-sidemenu">
+			<ul class="sidemenu page-header-fixed slimscroll-style" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top:20px">
+				<li class="sidebar-toggler-wrapper hide">
+					<div class="sidebar-toggler">
+						<span></span>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a href="<%= admins_root_path %>" class="nav-link nav-toggle">
+						<i class="material-icons">dashboard</i>
+						<span class="title">Dashboard</span>
+					</a>
+				</li>
+				<li class="nav-item <%= 'active open' if is_manage_data_page? %>">
+					<a href="#" class="nav-link nav-toggle"> <i class="material-icons">widgets</i>
+						<span class="title">Manage Data</span> <span class="arrow"></span>
+					</a>
+					<ul class="sub-menu">
+						<li class="nav-item">
+							<a href="<%= admins_banners_path %>" class="nav-link"> <span class="title">Banners</span> </a>
+						</li>
+						<li class="nav-item">
+							<a href="<%= admins_programs_path %>" class="nav-link"> <span class="title">Programs</span> </a>
+						</li>
+						<li class="nav-item">
+							<a href="<%= admins_testimonials_path %>" class="nav-link"> <span class="title">Testimonials</span> </a>
+						</li>
+						<li class="nav-item">
+							<a href="<%= admins_articles_path %>" class="nav-link"> <span class="title">Articles</span> </a>
+						</li>
+						<li class="nav-item">
+							<a href="<%= admins_categories_path %>" class="nav-link"> <span class="title">Categories</span> </a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item <%= 'active open' if is_data_contact_page? %>">
+					<a href="#" class="nav-link nav-toggle"> <i class="material-icons">list</i>
+						<span class="title">Data Contacts</span> <span class="arrow"></span>
+					</a>
+					<ul class="sub-menu">
+						<li class="nav-item">
+							<a href="<%= admins_contacts_path %>" class="nav-link"> <span class="title">All Contacts</span> </a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item <%= 'active open' if is_data_event_page? %>">
+					<a href="#" class="nav-link nav-toggle"> <i class="material-icons">event</i>
+						<span class="title">Pictures</span> <span class="arrow"></span>
+					</a>
+					<ul class="sub-menu">
+						<li class="nav-item">
+							<a href="<%= admins_galleries_path %>" class="nav-link"> <span class="title">Galleries</span> </a>
+						</li>
+						<li class="nav-item">
+							<a href="<%= admins_facilities_path %>" class="nav-link"> <span class="title">Facilities</span> </a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end sidebar menu -->
