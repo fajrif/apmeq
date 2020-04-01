@@ -1,33 +1,43 @@
-<div class="page blog with-sidebar left-sidebar">
-	<div class="wrap">
-		<div class="wrap_float">
-			<div class="title-block">
-				<h1 class="title">News & Events</h1>
-			</div>
-			<div class="page_content posts">
-				<main class="main">
-					<div class="post-image ie-img">
-						<%= image_tag(url_for(@article.image)) %>
-					</div>
-					<div class="post-head">
-						<div class="category">
+<!-- Start Breadcaump Area -->
+<div class="brook-breadcaump-area pt--130 pb--50 bg_color--1 breadcaump-title-bar">
+		<div class="container">
+				<div class="row">
+						<div class="col-lg-12">
+								<div class="breadcaump-inner text-center">
+										<h1 class="heading heading-h1">News</h1>
+								</div>
 						</div>
-						<h2 class="title">
-							<%= @article.title %>
-						</h2>
-						<div class="author">
-							<div class="name"><%= @article.created_at.to_time.strftime("%b %d, %Y") %></div>
-						</div>
-					</div>
-					<div class="post-body _content">
-						<p>
-							<%= raw @article.description %>
-						</p>
-					</div>
-				</main>
-				<%= render "sidebar" %>
-			</div>
+				</div>
 		</div>
-	</div>
 </div>
+<!-- End Breadcaump Area -->
 
+<!-- Start Blog Details -->
+<div class="brook-blog-details-area bg_color--1 pt--90 pb--150">
+		<div class="container">
+				<div class="row">
+						<div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12 col-12">
+								<div class="blog-details-wrapper">
+										<article class="blog-post standard-post">
+												<!-- Start Header -->
+												<div class="header mb--40 text-center">
+														<h3 class="heading heading-h3 font-32"><%= @article.title %></h3>
+														<div class="post-meta mt--20">
+																<div class="post-date"><%= @article.created_at.to_time.strftime("%b %d, %Y") %></div>
+														</div>
+												</div>
+												<!-- Start Thumbnail -->
+												<div class="thumbnail mb--60">
+													<%= image_tag(url_for(@article.image), :class => "w-100") %>
+												</div>
+												<!-- Start Content -->
+												<div class="content basic-dark2-line-1px pb--50 mb--35">
+													<%= raw @article.description %>
+												</div>
+										</article>
+								</div>
+						</div>
+				</div>
+		</div>
+</div>
+<!-- End Blog Details -->
