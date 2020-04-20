@@ -12,7 +12,7 @@ class Admins::CategoriesController < Admins::BaseController
   end
 
   def show
-		@category = Category.friendly.find(params[:id])
+		@category = Category.find(params[:id])
   end
 
   def new
@@ -29,11 +29,11 @@ class Admins::CategoriesController < Admins::BaseController
   end
 
   def edit
-		@category = Category.friendly.find(params[:id])
+		@category = Category.find(params[:id])
   end
 
   def update
-		@category = Category.friendly.find(params[:id])
+		@category = Category.find(params[:id])
     if @category.update_attributes(params_category)
       redirect_to admins_category_path(@category), :notice  => "Successfully updated category."
     else
@@ -42,7 +42,7 @@ class Admins::CategoriesController < Admins::BaseController
   end
 
   def destroy
-		@category = Category.friendly.find(params[:id])
+		@category = Category.find(params[:id])
     @category.destroy
     redirect_to admins_categories_url, :notice => "Successfully destroyed category."
   end

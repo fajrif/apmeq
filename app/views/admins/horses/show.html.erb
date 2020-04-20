@@ -1,0 +1,78 @@
+<div class="page-bar">
+	<div class="page-title-breadcrumb">
+		<div class=" pull-left">
+			<div class="page-title">Horse details</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12 col-sm-12">
+		<div class="card card-box">
+			<div class="card-body ">
+				<div class="form-horizontal">
+					<div class="form-body">
+						<div class="form-group row">
+							<label class="control-label col-md-3">ID</label>
+							<div class="col-md-5">
+								<%= @horse.id %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Images</label>
+							<div class="col-md-5">
+								<% @horse.images.each do |image| %>
+									<%= image_tag image.variant(resize: "379x252").processed, :style => "margin-bottom:5px;" %>
+								<% end %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Name</label>
+							<div class="col-md-5">
+								<%= @horse.name %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Category</label>
+							<div class="col-md-5">
+								<%= @horse.try(:category).try(:name) %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Breed</label>
+							<div class="col-md-5">
+								<%= @horse.breed %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Color</label>
+							<div class="col-md-5">
+								<%= @horse.color %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Year</label>
+							<div class="col-md-5">
+								<%= @horse.year %>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-md-3">Description</label>
+							<div class="col-md-5">
+								<%= raw @horse.description %>
+							</div>
+						</div>
+						<div class="form-actions">
+							<div class="row">
+								<div class="offset-md-3 col-md-9">
+									<%= link_to 'Edit', edit_admins_horse_path(@horse), :class => 'btn btn-warning' %>
+									<%= link_to 'Destroy', admins_horse_path(@horse), :confirm => 'Are you sure?', :method => :delete, :class => 'btn btn-danger' %>
+									<%= link_to 'View All', admins_horses_path, :class => 'btn' %>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

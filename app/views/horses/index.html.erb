@@ -1,0 +1,44 @@
+<div class="brook-breadcaump-area pt--130 pb--50 bg_color--1 breadcaump-title-bar">
+		<div class="container">
+				<div class="row">
+						<div class="col-lg-12">
+								<div class="breadcaump-inner text-center">
+										<h1 class="heading heading-h1">Our Horses</h1>
+								</div>
+						</div>
+				</div>
+		</div>
+</div>
+
+<!-- Start Blog Grid Area -->
+<div class="brook-portfolio-area pt--30 pb--100 bg_color--1 bk-masonary-wrapper">
+	<div class="container">
+		<div class="messonry-button text-center mb--50">
+			<button data-filter="*" class="is-checked"><span class="filter-text">All</span></button>
+			<% @categories.all.each do |cat| %>
+				<button data-filter=".<%= cat.name.downcase %>"><span class="filter-text"><%= cat.name %></span></button>
+			<% end %>
+		</div>
+		<div class="portfolio-grid-metro mesonry-list">
+				<div class="resizer"></div>
+				<% @horses.each do |horse| %>
+				<!-- Start Single Portfolio -->
+				<div class="portfolio portfolio_style--1 portfolio-25 grid-width-2 <%= horse.category.name.downcase %>">
+						<div class="thumb">
+							<%= link_to horse_path(horse) do %>
+								<%= image_tag(url_for(horse.image)) %>
+							<% end %>
+						</div>
+						<div class="port-overlay-info">
+								<div class="hover-action">
+										<h3 class="post-overlay-title"><%= link_to horse.name, horse_path(horse) %></h3>
+								</div>
+						</div>
+				</div>
+				<!-- End Single Portfolio -->
+				<% end %>
+		</div>
+	</div>
+</div>
+<!-- End Blog Grid Area -->
+

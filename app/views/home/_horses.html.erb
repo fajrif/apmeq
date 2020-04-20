@@ -8,7 +8,7 @@
 								<h3 class="theme-color">Horses</h3>
 							</div>
 							<div class="heading-right">
-								<button>See all <i class="fa fa-arrow-right"></i> </button>
+								<a href="<%= horses_path %>">See all <i class="fa fa-arrow-right"></i> </a>
 							</div>
 						</div>
 					</div>
@@ -27,7 +27,7 @@
 								</div>
 								<!-- Team Info -->
 								<div class="info">
-									<h6 class="name"><%= horse.name %></h6>
+									<a href="<%= horse_path(horse) %>"><h6 class="name"><%= horse.name %></h6></a>
 									<span class="position"><%= horse.breed %></span>
 								</div>
 							</div>

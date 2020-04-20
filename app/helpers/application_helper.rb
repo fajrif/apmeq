@@ -94,6 +94,7 @@ module ApplicationHelper
   end
 
   def is_data_event_page?
+		controller.controller_name == "horses" ||
 		controller.controller_name == "galleries" ||
 		controller.controller_name == "facilities"
   end

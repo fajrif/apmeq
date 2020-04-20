@@ -5,7 +5,6 @@
 		<%= f.input :name %>
 		<%= f.input :category_name, as: :select, collection: [['facility', 'Facility'], ['livery', 'Livery']], label_method: :second, value_method: :first %>
 		<%= f.input :description, as: :text, input_html: { rows: "20" } %>
-		<%= f.association :event %>
 		<div class="form-actions">
 			<div class="row">
 				<div class="offset-md-3 col-md-9">
