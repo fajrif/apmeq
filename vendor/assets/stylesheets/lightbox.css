@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'lg';
-    src: url("../img/icons/lg.eot?n1z373");
-    src: url("../img/icons/lg.eot?#iefixn1z373") format("embedded-opentype"), url("../img/icons/lg.woff?n1z373") format("woff"), url("../img/icons/lg.ttf?n1z373") format("truetype"), url("../fonts/lg.svg?n1z373#lg") format("svg");
+    src: url("lg.eot?n1z373");
+    src: url("lg.eot?#iefixn1z373") format("embedded-opentype"), url("lg.woff?n1z373") format("woff"), url("lg.ttf?n1z373") format("truetype"), url("lg.svg?n1z373#lg") format("svg");
     font-weight: normal;
     font-style: normal;
 }

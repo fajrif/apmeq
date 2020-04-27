@@ -1,0 +1,33 @@
+<p><small><%= "Display total #{@instructors.count} instructors" %></small></p>
+
+<table class="table display product-overview mb-30">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Title</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for instructor in @instructors %>
+      <tr>
+				<td><%= instructor.id %></td>
+				<td><%= image_tag instructor.image.variant(resize: "100x100").processed %></td>
+				<td><strong><%= link_to instructor.name, admins_instructor_path(instructor) %></strong></td>
+				<td><%= instructor.title %></td>
+        <td class="actions">
+					<%= link_to admins_instructor_path(instructor), "data-toggle" => "tooltip", :title => "Edit" do %>
+						<i class="fa fa-pencil"></i>
+					<% end %>
+          <%= link_to admins_instructor_path(instructor), :confirm => 'Are you sure?', :method => :delete, :class => 'text-inverse' do %>
+						<i class="fa fa-trash"></i>
+					<% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= paginate @instructors %>

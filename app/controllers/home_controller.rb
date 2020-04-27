@@ -10,6 +10,7 @@ class HomeController < ApplicationController
 
   def about
 		# get public about
+		@instructors = Instructor.all
   end
 
   def services

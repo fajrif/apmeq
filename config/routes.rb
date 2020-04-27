@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 		resources :galleries
 		resources :facilities
 		resources :horses
+		resources :instructors
 		resources :testimonials
 	end
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_22_073559) do
+ActiveRecord::Schema.define(version: 2020_04_27_121340) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -125,6 +125,14 @@ ActiveRecord::Schema.define(version: 2020_04_22_073559) do
     t.string "disciplines"
     t.string "height"
     t.index ["slug"], name: "index_horses_on_slug", unique: true
+  end
+
+  create_table "instructors", force: :cascade do |t|
+    t.string "name", default: "", null: false
+    t.string "title"
+    t.string "profile"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "testimonials", force: :cascade do |t|

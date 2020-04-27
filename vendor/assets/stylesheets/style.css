@@ -3496,7 +3496,7 @@ body.template-color-23 .text-color {
     margin-left: 30px !important; } }
 
 /*---------------------------
-Section Separation  
+Section Separation
 ----------------------------*/
 .bkseparator--5 {
   height: 5px; }
@@ -8764,7 +8764,7 @@ Counterup Area
       position: relative;
       overflow: hidden; }
       .team.team_style--1 .image-wrap .thumb img {
-        width: 100%; }
+        width: 100%; min-height: 222px; }
       .team.team_style--1 .image-wrap .thumb .overlay {
         position: absolute;
         top: 0;
@@ -11859,7 +11859,7 @@ Progress Charts
   width: 100%;
   height: 100%; }
   .gallery .thumb img {
-    width: 100%; }
+    width: 100%; min-height: 408px; }
   .gallery .hover-overlay {
     position: absolute;
     top: 0;
