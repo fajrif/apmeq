@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_27_121340) do
+ActiveRecord::Schema.define(version: 2020_04_29_082355) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -57,6 +57,18 @@ ActiveRecord::Schema.define(version: 2020_04_27_121340) do
     t.string "caption2", default: "", null: false
     t.string "caption3", default: "", null: false
     t.string "description", default: "", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "bookings", force: :cascade do |t|
+    t.string "name", default: "", null: false
+    t.date "dob"
+    t.integer "instructor_id"
+    t.datetime "date_lesson"
+    t.string "emergency_contact_name"
+    t.string "emergency_contact_phone"
+    t.integer "as_member"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -133,6 +145,12 @@ ActiveRecord::Schema.define(version: 2020_04_27_121340) do
     t.string "profile"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "links", force: :cascade do |t|
+    t.string "name", default: "", null: false
+    t.string "caption"
+    t.string "url"
   end
 
   create_table "testimonials", force: :cascade do |t|

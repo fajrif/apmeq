@@ -1,0 +1,24 @@
+<%= simple_form_for [:admins, @booking], :html => { :class => 'form-horizontal' } do |f| %>
+	<%= f.error_notification %>
+	<div class="form-body">
+		<%= f.input :name %>
+		<%= f.association :instructor %>
+		<%= f.input :dob, as: :date %>
+		<%= f.input :date_lesson, as: :datetime %>
+		<%= f.input :emergency_contact_name %>
+		<%= f.input :emergency_contact_phone %>
+		<%= f.input :as_member, as: :select, collection: [[1, 'Member'], [0, 'Non-Member']], label_method: :second, value_method: :first %>
+		<div class="form-actions">
+			<div class="row">
+				<div class="offset-md-3 col-md-9">
+					<%= f.button :submit, :class => 'btn btn-primary' %>
+					<% unless @booking.new_record? %>
+					<%= link_to "Cancel", admins_booking_path(@booking), :class => 'btn' %>
+					<% else %>
+					<%= link_to "Cancel", admins_bookings_path, :class => 'btn' %>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+<% end %>

@@ -90,6 +90,7 @@ module ApplicationHelper
   def is_manage_data_page?
 		controller.controller_name == "banners" ||
 		controller.controller_name == "articles" ||
+		controller.controller_name == "links" ||
 		controller.controller_name == "categories"
   end
 
@@ -101,7 +102,8 @@ module ApplicationHelper
   end
 
   def is_data_contact_page?
-		controller.controller_name == "contacts"
+		controller.controller_name == "contacts" ||
+		controller.controller_name == "bookings"
   end
 
 end

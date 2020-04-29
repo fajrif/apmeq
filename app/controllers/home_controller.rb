@@ -33,19 +33,4 @@ class HomeController < ApplicationController
 		# get public about
   end
 
-  def first_riding_school
-		# get public about
-  end
-
-  def second_riding_school
-		# get public about
-  end
-
-  def third_riding_school
-		# get public about
-  end
-
-  def fourth_riding_school
-		# get public about
-  end
 end

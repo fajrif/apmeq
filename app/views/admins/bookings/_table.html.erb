@@ -1,0 +1,35 @@
+<p><small><%= "Display total #{@bookings.count} bookings" %></small></p>
+
+<table class="table display product-overview mb-30">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Membership</th>
+      <th>Instructor</th>
+      <th>Date Lesson</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for booking in @bookings %>
+      <tr>
+				<td><%= booking.id %></td>
+				<td><strong><%= link_to booking.name, admins_booking_path(booking) %></strong></td>
+				<td><%= booking.membership_label %></td>
+				<td><%= booking.try(:instructor).try(:name) %></td>
+				<td><%= booking.date_lesson %></td>
+        <td class="actions">
+					<%= link_to admins_booking_path(booking), "data-toggle" => "tooltip", :title => "Edit" do %>
+						<i class="fa fa-pencil"></i>
+					<% end %>
+          <%= link_to admins_booking_path(booking), :confirm => 'Are you sure?', :method => :delete, :class => 'text-inverse' do %>
+						<i class="fa fa-trash"></i>
+					<% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= paginate @bookings %>
