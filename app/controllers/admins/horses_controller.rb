@@ -50,7 +50,7 @@ class Admins::HorsesController < Admins::BaseController
   private
 
   def params_horse
-    params.require(:horse).permit(:name, :disciplines, :height, :category, :breed, :description, :sex, :year, :color, images: [])
+    params.require(:horse).permit(:name, :disciplines, :height, :category_id, :breed, :description, :sex, :year, :color, images: [])
   end
 
 end
