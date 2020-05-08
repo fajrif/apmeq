@@ -75,3 +75,18 @@ h.save!
 h = init_horse
 h.images.attach(io: Rails.root.join("app/assets/images/horses/horse4.png").open, filename: "horse4.png")
 h.save!
+
+# Services
+Service.delete_all
+
+s = Service.new(:name => "Tack Shop", :description => "Our Tack shop has top of the line equestrian equipment and our equestrian center souvenirs.")
+s.image.attach(io: Rails.root.join("app/assets/images/services/service1.png").open, filename: "service1.png")
+s.save
+
+s = Service.new(:name => "Accomodation", :description => "Our Equestrian Center is the perfect place to get away. Whether you live in the area and wish for some quiet time away or you’re visiting nearby Tangerang City. You could enjoy our equestrian facilities or simply wish to relax in one of our wonderful Manado House.")
+s.image.attach(io: Rails.root.join("app/assets/images/services/service2.png").open, filename: "service2.png")
+s.save
+
+s = Service.new(:name => "Photo Shooting", :description => "APM Equestrian Center is in the midst of nature just 15 minutes from the Tangerang district office. Our beautiful 76.000m2 facility offers a variety of settings, from the Club House, Stable, Paddock, Indoor Arena, Outdoor Arena, and VIP Lounge. We have been featured in several TV shows, magazines and photo shoots in the past.")
+s.image.attach(io: Rails.root.join("app/assets/images/services/service3.png").open, filename: "service3.png")
+s.save

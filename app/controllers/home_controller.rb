@@ -15,6 +15,7 @@ class HomeController < ApplicationController
 
   def services
 		# get public about
+		@services = Service.all
   end
 
   def terms

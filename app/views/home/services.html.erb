@@ -17,51 +17,21 @@
 
 <!-- Start Service List -->
 <div class="brook-service-list-area">
-
+	<% @services.each do |service| %>
 		<!-- Start Single Service -->
 		<div class="bk-service-list d-block d-md-flex mb--100 align-items-center wow move-up">
-				<div class="thumb">
-					<%= image_tag('services/service1.png', :class => "w-120") %>
-				</div>
-				<div class="content pl--150 plr_md--50 plr_sm--40">
-						<h3 class="heading heading-h3">Tack Shop</h3>
-						<div class="bkseparator--35"></div>
-						<p class="bk_pra">
-							Our Tack shop has top of the line equestrian equipment and our equestrian center souvenirs.
-						</p>
-				</div>
+			<div class="thumb">
+				<%= image_tag(url_for(service.image), :class => "w-120") %>
+			</div>
+			<div class="content pl--150 plr_md--50 plr_sm--40">
+				<h3 class="heading heading-h3"><%= service.name %></h3>
+				<div class="bkseparator--35"></div>
+				<p class="bk_pra">
+					<%= service.description %>
+				</p>
+			</div>
 		</div>
 		<!-- End Single Service -->
-
-		<!-- Start Single Service -->
-		<div class="bk-service-list d-block d-md-flex mb--100 align-items-center wow move-up">
-				<div class="thumb">
-					<%= image_tag('services/service2.png', :class => "w-120") %>
-				</div>
-				<div class="content pl--150 plr_md--50 plr_sm--40">
-						<h3 class="heading heading-h3">Accomodation</h3>
-						<div class="bkseparator--35"></div>
-						<p class="bk_pra">
-						Our Equestrian Center is the perfect place to get away. Whether you live in the area and wish for some quiet time away or you’re visiting nearby Tangerang City. You could enjoy our equestrian facilities or simply wish to relax in one of our wonderful Manado House.
-						</p>
-				</div>
-		</div>
-		<!-- End Single Service -->
-
-		<!-- Start Single Service -->
-		<div class="bk-service-list d-block d-md-flex mb--100 align-items-center wow move-up">
-				<div class="thumb">
-					<%= image_tag('services/service3.png', :class => "w-120") %>
-				</div>
-				<div class="content pl--150 plr_md--50 plr_sm--40">
-						<h3 class="heading heading-h3">Photo Shooting</h3>
-						<div class="bkseparator--35"></div>
-						<p class="bk_pra">
-							APM Equestrian Center is in the midst of nature just 15 minutes from the Tangerang district office. Our beautiful 76.000m2 facility offers a variety of settings, from the Club House, Stable, Paddock, Indoor Arena, Outdoor Arena, and VIP Lounge. We have been featured in several TV shows, magazines and photo shoots in the past.
-						</p>
-				</div>
-		</div>
-		<!-- End Single Service -->
-
+	<% end %>
 </div>
 <!-- End Service List -->

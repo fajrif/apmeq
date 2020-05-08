@@ -8,24 +8,18 @@
 										<div class="portfolio-main-info">
 											<h3 class="heading heading-h3 line-height-1-42"><%= @facility.name %></h3>
 												<div class="portfolio-content mt--75 mb--75 mt_md--40 mb_md--40 mt_sm--40 mb_sm--40">
-														<h6 class="heading heading-h6">About Facility</h6>
-														<div class="desc mt--20">
-																<p class="bk_pra">
-																	<%= @facility.description %>
-																</p>
-														</div>
+													<h6 class="heading heading-h6">About Facility</h6>
+													<div class="desc mt--20">
+														<p class="bk_pra">
+															<%= @facility.description %>
+														</p>
+													</div>
 												</div>
 												<!-- Start Details List -->
 												<div class="portfolio-details-list">
-
-														<div class="details-list">
-																<label>Category</label>
-																<span><%= @facility.category_name.titleize %></span>
-														</div>
-														<div class="details-list">
-																<span><%= link_to "View All", facilities_path %></span>
-														</div>
-
+													<div class="details-list">
+														<span><%= link_to "View All", facilities_path %></span>
+													</div>
 												</div>
 												<!-- End Details List -->
 										</div>

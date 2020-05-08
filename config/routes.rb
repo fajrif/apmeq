@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 		resources :categories
 		resources :galleries
 		resources :facilities
+		resources :services
 		resources :horses
 		resources :instructors
 		resources :testimonials

@@ -12,7 +12,7 @@
 						</div>
 				</div>
 		</div>
-		<div class="blog-wrapper pl--230 pr--230 pr_lp--100 pl_lp--100 pl_lg--100 pr_lg--100 pl_md--50 pr_md--50 pl_sm--30 pr_sm--30 section-pb-xl">
+		<div class="blog-wrapper pl--230 pr--230 pr_lp--100 pl_lp--100 pl_lg--100 pr_lg--100 pl_md--50 pr_md--50 pl_sm--30 pr_sm--30" style="padding-bottom:40px;">
 				<div class="row row--0 space_dec--250">
 
 					<% @articles.each do |article| %>
@@ -23,7 +23,6 @@
 											<%= link_to get_news_path(article) do %>
 												<%= image_tag(article.image.variant(combine_options: { gravity: 'Center', crop: '413x419+0+0' }).processed) %>
 											<% end %>
-											<div class="overlay-news"></div>
 										</div>
 										<div class="blog-content blog-position--bottom">
 												<div class="content">

@@ -1,0 +1,33 @@
+<p><small><%= "Display total #{@services.count} services" %></small></p>
+
+<table class="table display product-overview mb-30">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for service in @services %>
+      <tr>
+				<td><%= service.id %></td>
+				<td><%= image_tag service.image.variant(resize: "100x100").processed %></td>
+				<td><%= service.name %></td>
+				<td><%= service.description %></td>
+        <td class="actions">
+					<%= link_to admins_service_path(service), "data-toggle" => "tooltip", :title => "Edit" do %>
+						<i class="fa fa-pencil"></i>
+					<% end %>
+					<%= link_to admins_service_path(service), :confirm => 'Are you sure?', :method => :delete, :class => 'text-inverse' do %>
+						<i class="fa fa-trash"></i>
+					<% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= paginate @services %>

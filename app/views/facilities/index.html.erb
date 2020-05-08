@@ -13,16 +13,11 @@
 <!-- Start Blog Grid Area -->
 <div class="bk-blog-grid-area pt--30 pb--100 bg_color--1 bk-masonary-wrapper">
 	<div class="container">
-		<div class="messonry-button text-center mb--50">
-			<button data-filter="*" class="is-checked"><span class="filter-text">All</span></button>
-			<button data-filter=".facility"><span class="filter-text">Facilities</span></button>
-			<button data-filter=".livery"><span class="filter-text">Liveries</span></button>
-		</div>
 		<div class="portfolio-grid-metro mesonry-list">
 			<div class="resizer"></div>
 			<% @facilities.each do |facility| %>
 				<!-- Start Single Blog -->
-				<div class="portfolio-25 <%= facility.category_name.downcase %>">
+				<div class="portfolio-25">
 					<div class="blog-grid blog-grid--modern blog-standard">
 						<div class="post-thumb">
 							<%= link_to facility_path(facility) do %>
@@ -31,9 +26,6 @@
 						</div>
 						<div class="post-content text-center">
 							<div class="post-inner">
-								<div class="post-meta mb--10">
-									<span><strong><%= facility.category_name.titleize %></strong></span>
-								</div>
 								<h5 class="heading heading-h5 line-height-1-39">
 									<%= link_to facility.name, facility_path(facility) %>
 								</h5>

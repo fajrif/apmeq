@@ -266,7 +266,7 @@ kbd,
 pre,
 samp {
   font-family: monospace, serif;
-  font-size: 14px;
+  font-size: 20px;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
@@ -276,7 +276,7 @@ pre {
   background: #f5f5f5;
   color: #666;
   font-family: monospace;
-  font-size: 14px;
+  font-size: 20px;
   margin: 20px 0;
   overflow: auto;
   padding: 20px;
@@ -300,7 +300,7 @@ q:after {
   content: none; }
 
 blockquote {
-  font-size: 18px;
+  font-size: 20px;
   font-style: italic;
   font-weight: 300;
   margin: 24px 40px; }
@@ -310,7 +310,7 @@ blockquote blockquote {
 
 blockquote cite,
 blockquote small {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: normal;
   text-transform: uppercase; }
 
@@ -447,7 +447,7 @@ table {
   border-bottom: 1px solid #ededed;
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 2;
   margin: 0 0 20px;
   width: 100%; }
@@ -459,7 +459,7 @@ td {
   text-align: left; }
 
 caption {
-  font-size: 16px;
+  font-size: 20px;
   margin: 20px 0; }
 
 th {
@@ -499,7 +499,7 @@ html {
 
 body {
   overflow: hidden;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -573,11 +573,11 @@ h4,
 
 h5,
 .h5 {
-  font-size: 18px; }
+  font-size: 20px; }
 
 h6,
 .h6 {
-  font-size: 14px; }
+  font-size: 20px; }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   h1,
@@ -663,7 +663,7 @@ input,
 select,
 textarea {
   width: 100%;
-  font-size: 14px; }
+  font-size: 20px; }
 
 input,
 select {
@@ -6980,12 +6980,18 @@ Padding Top Bottom
 /* Section Padding Bottom */
 .section-pb-xl {
   padding-bottom: 150px; }
+.section-pb-l {
+  padding-bottom: 90px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .section-pb-xl {
-      padding-bottom: 80px; } }
+      padding-bottom: 80px; }
+    .section-pb-l {
+      padding-bottom: 50px; } }
   @media only screen and (max-width: 767px) {
     .section-pb-xl {
-      padding-bottom: 70px; } }
+      padding-bottom: 70px; }
+    .section-pb-l {
+      padding-bottom: 40px; } }
   @media only screen and (max-width: 575px) {
     .section-pb-xl {
       padding-bottom: 60px; } }
@@ -7629,7 +7635,7 @@ button.bk-btn {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
   color: #fff;
   display: inline-block;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
   letter-spacing: 0em;
   font-family: "Shree_Devanagari_714", sans-serif; }
@@ -7818,19 +7824,19 @@ button.brook-btn {
     padding: 0 30px;
     height: 48px;
     line-height: 48px;
-    font-size: 14px; }
+    font-size: 20px; }
   a.brook-btn.btn-sd-size,
   button.brook-btn.btn-sd-size {
     padding: 0 36px;
     height: 55px;
     line-height: 55px;
-    font-size: 14px; }
+    font-size: 20px; }
   a.brook-btn.btn-lg-size,
   button.brook-btn.btn-lg-size {
     padding: 0 40px;
     height: 62px;
     line-height: 62px;
-    font-size: 16px; }
+    font-size: 20px; }
   a.brook-btn:hover,
   button.brook-btn:hover {
     -webkit-transform: translateY(-3px);
@@ -7839,13 +7845,13 @@ button.brook-btn {
 
 a.moredetails-btn {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 20px;
   color: #222;
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
   a.moredetails-btn.font-16 {
-    font-size: 16px; }
+    font-size: 20px; }
   a.moredetails-btn:hover {
     color: #C27433; }
   a.moredetails-btn i {
@@ -7870,7 +7876,7 @@ a.moredetails-btn {
   font-family: "louis_george_caferegular"; }
 
 .view-more-btn.font-18 a {
-  font-size: 18px; }
+  font-size: 20px; }
 
 .view-more-btn.font-700 a {
   font-weight: 700; }
@@ -7879,7 +7885,7 @@ a.moredetails-btn {
   font-weight: 600; }
 
 .view-more-btn a {
-  font-size: 14px; }
+  font-size: 20px; }
   .view-more-btn a span {
     color: #ffffff;
     -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -7897,7 +7903,7 @@ a.moredetails-btn {
       background: currentColor;
       margin-left: 14px;
       color: #FCB72B;
-      font-size: 14px;
+      font-size: 20px;
       font-family: "Shree_Devanagari_714", sans-serif; }
       .view-more-btn a span.btn-arrow::before {
         content: "";
@@ -7998,7 +8004,7 @@ a.moredetails-btn {
 ============================*/
 .section-title h3 {
   color: #C27433;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -8111,7 +8117,7 @@ Creative Agency Section Title
       font-weight: 700; }
   .section-title--between .section-btn a.button-text {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 20px;
     color: #fff;
     font-family: "Shree_Devanagari_714", sans-serif;
     white-space: nowrap;
@@ -8128,7 +8134,7 @@ Creative Agency Section Title
       transform: translate(5px, 0); }
 
 .title--creative h3.heading {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -8157,7 +8163,7 @@ Creative Agency Section Title
       display: none; } }
 
 .title--creative p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.67;
   color: #ffffff;
   margin-bottom: 45px;
@@ -8203,7 +8209,7 @@ Creative Agency Section Title
       color: #C27433;
       font-size: 80px; }
   .service.service--1 .content h4 {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.38;
     margin-bottom: 18px;
     color: #222222;
@@ -8214,12 +8220,12 @@ Creative Agency Section Title
     font-family: 'louis_george_caferegular';
     letter-spacing: 0em;
     line-height: 1.32;
-    font-size: 16px; }
+    font-size: 20px; }
   .service.service--1 .content a.service-btn {
     border: 0;
     background-color: transparent;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 20px;
     color: #222;
     display: inline-block;
     margin-top: 46px;
@@ -8253,7 +8259,7 @@ Creative Agency Section Title
 
 .service.service--2 .content h4 {
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.4;
   margin-bottom: 21px;
   font-weight: 700;
@@ -8285,7 +8291,7 @@ Creative Agency Section Title
   padding: 0 20px;
   text-align: center; }
   .service.service--3 .content h3 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 14px;
     margin-top: 28px;
     font-weight: 600;
@@ -8302,7 +8308,7 @@ Creative Agency Section Title
   .service.service--3 .content p {
     letter-spacing: 0em;
     line-height: 1.32;
-    font-size: 16px;
+    font-size: 20px;
     font-family: "louis_george_caferegular";
     color: #333333; }
 
@@ -8501,7 +8507,7 @@ Creative Agency Section Title
       font-size: 28px; } }
 
 .service-content p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.78;
   margin-bottom: 60px; }
 
@@ -8546,7 +8552,7 @@ Counterup Area
   display: block; }
 
 .brook-counter .content h6 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
   color: #333333; }
@@ -8599,7 +8605,7 @@ Counterup Area
       font-size: 60px; } }
 
 .brook-counter.onepage-counter .content h6 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
   color: #333333; }
@@ -8620,7 +8626,7 @@ Counterup Area
 Counterup Area 
 ----------------------*/
 .number-speaks .content h3 {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -8669,7 +8675,7 @@ Counterup Area
     flex: 0 0 66.66667%;
     max-width: 66.66667%; }
     .number-wrap .content h6 {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.39;
       margin-bottom: 0;
       color: #222222;
@@ -8679,7 +8685,7 @@ Counterup Area
       margin-top: 20px;
       font-family: "louis_george_caferegular";
       line-height: 1.32;
-      font-size: 16px;
+      font-size: 20px;
       margin-bottom: 0;
       color: #333; }
 
@@ -8734,7 +8740,7 @@ Counterup Area
     Team Area 
 ========================*/
 .team-heading .heading-left h3 {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -8746,7 +8752,7 @@ Counterup Area
   border: 0;
   background-color: transparent;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 20px;
   color: #222;
   font-family: "Shree_Devanagari_714", sans-serif; }
   .team-heading .heading-right button i {
@@ -8822,7 +8828,7 @@ Counterup Area
       transform: translateY(-5px); }
       .team.team_style--1 .image-wrap .social-networks .inner a {
         display: inline-block;
-        font-size: 18px;
+        font-size: 20px;
         padding: 5px 10px;
         color: #fff;
         -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -8855,7 +8861,7 @@ Counterup Area
         .team.team_style--1 .image-wrap .social-networks .inner a[class*=hint--]:after {
           color: #fff;
           padding: 8px 10px;
-          font-size: 14px;
+          font-size: 20px;
           line-height: 14px;
           white-space: nowrap;
           border-radius: 5px;
@@ -8909,7 +8915,7 @@ Counterup Area
           -ms-transform: translateX(-50%) translateY(-8px);
           transform: translateX(-50%) translateY(-8px); }
   .team.team_style--1 .info h6 {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.388;
     margin-bottom: 4px;
     color: #222222;
@@ -8918,7 +8924,7 @@ Counterup Area
   .team.team_style--1 .info span {
     letter-spacing: 0em;
     line-height: 1.32;
-    font-size: 16px;
+    font-size: 20px;
     font-family: "louis_george_caferegular";
     color: #333; }
   .team.team_style--1:hover .image-wrap .thumb .overlay {
@@ -8984,7 +8990,7 @@ Counterup Area
       margin: 0; }
       .team.team__style--2 .thumb .social-icon li a {
         display: inline-block;
-        font-size: 18px;
+        font-size: 20px;
         color: #fff;
         width: 40px;
         height: 40px;
@@ -9023,7 +9029,7 @@ Counterup Area
       .team.team__style--2 .thumb .team-info {
         bottom: 34px; } }
     .team.team__style--2 .thumb .team-info .info h5 {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.388;
       margin-bottom: 6px;
       color: #fff;
@@ -9033,7 +9039,7 @@ Counterup Area
       text-align: center;
       font-weight: 500;
       line-height: 1.58;
-      font-size: 14px; }
+      font-size: 20px; }
 
 .team.team__style--2:hover .thumb {
   border-color: rgba(0, 56, 227, 0.1); }
@@ -9092,7 +9098,7 @@ Counterup Area
         -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
         transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
         display: inline-block;
-        font-size: 18px;
+        font-size: 20px;
         color: #222;
         width: 40px;
         height: 40px;
@@ -9102,7 +9108,7 @@ Counterup Area
         margin: 7px; }
 
 .team.team__style--3 .team-info .info h5 {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.388;
   margin-bottom: 6px;
   font-family: "BigCaslon-Medium", sans-serif; }
@@ -9111,7 +9117,7 @@ Counterup Area
   font-weight: 500;
   letter-spacing: 0em;
   line-height: 1.58;
-  font-size: 14px;
+  font-size: 20px;
   color: #333333; }
 
 .team.team__style--3:hover .thumb .overlay {
@@ -9151,7 +9157,7 @@ Counterup Area
           display: inline-block;
           padding: 5px 10px;
           line-height: 1.15;
-          font-size: 16px;
+          font-size: 20px;
           -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
           -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
           transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -9165,7 +9171,7 @@ Counterup Area
     color: #222222;
     font-family: "BigCaslon-Medium", sans-serif; }
   .team.team_style--4 .inner .content-body .position {
-    font-size: 14px;
+    font-size: 20px;
     color: #333; }
   .team.team_style--4:hover .inner .content-header .social-network {
     -webkit-transform: translateY(0);
@@ -9422,6 +9428,7 @@ Blog Default Style
   position: relative;
   /* Blog Style 2 */ }
   .blog .thumb {
+		padding: 10px;
     position: relative; }
     .blog .thumb a img {
       width: 100%; }
@@ -9515,7 +9522,7 @@ Blog Default Style
         bottom: 0;
         opacity: 0; }
       .blog.blog-style--2 .blog-content .content h3.the-title {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1.38;
         margin-bottom: 27px;
         font-family: "Montserrat", sans-serif; }
@@ -9571,12 +9578,12 @@ Blog Default Style
       transition: all 0.5s cubic-bezier(0.57, 0.21, 0.69, 1);
       width: 100%; height: 419px; }
   .blog-style--1 .blog-content.blog-position--bottom {
-    position: absolute;
+    /*position: absolute;*/
     left: 0;
     right: 0;
     bottom: 0;
     padding: 30px 30px 50px;
-    color: #fff;
+    color: #000;
     width: 100%;
     text-align: center; }
   .blog-style--1 .blog-content .content .video-btn {
@@ -9607,9 +9614,9 @@ Blog Default Style
     .blog-style--1 .blog-content .content ul.meta li {
       position: relative;
       display: inline-block;
-      color: #fff; }
+      color: #222222; }
       .blog-style--1 .blog-content .content ul.meta li a {
-        color: #fff; }
+        color: #222222; }
       .blog-style--1 .blog-content .content ul.meta li + li {
         padding-left: 15px;
         margin-left: 7px; }
@@ -9626,9 +9633,9 @@ Blog Default Style
     font-family: "BigCaslon-Medium", sans-serif;
     margin: 0 0 18px; }
     .blog-style--1 .blog-content .content h3.the-title a {
-      color: #fff; }
+      color: #222222; }
   .blog-style--1 .blog-content .content h6.post-quote-by {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.12;
     margin-bottom: 0;
     font-weight: 600;
@@ -9666,7 +9673,7 @@ Blog Default Style
   line-height: 1.94;
   margin-top: 10px;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 20px;
   color: #333333;
   font-family: "louis_george_caferegular"; }
   .address-inner .address p a {
@@ -9729,7 +9736,7 @@ Blog Default Style
   border-radius: 0 !important; }
 
 .single-contact-address .title {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500; }
 
 .single-contact-address .address p {
@@ -9794,7 +9801,7 @@ Contact Form Style 01
     -o-transition: all 0.3s cubic-bezier(1, 0.03, 0, 0.99);
     transition: all 0.3s cubic-bezier(1, 0.03, 0, 0.99);
     font-family: "louis_george_caferegular";
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700; }
   .form-style--1 .input-box textarea {
     border: 0;
@@ -9807,7 +9814,7 @@ Contact Form Style 01
     -o-transition: all 0.3s cubic-bezier(1, 0.03, 0, 0.99);
     transition: all 0.3s cubic-bezier(1, 0.03, 0, 0.99);
     font-family: "louis_george_caferegular";
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     padding-left: 0; }
   .form-style--1 .input-box::after {
@@ -9845,7 +9852,7 @@ Contact Form Style 01
     margin-right: 110px;
     color: #888;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
     font-family: "louis_george_caferegular"; }
     @media only screen and (max-width: 767px) {
       .form-style--1 .form-action .form-description {
@@ -9864,7 +9871,7 @@ Contact Form Style 01
       border-style: solid;
       border-radius: 6px;
       font-weight: 600;
-      font-size: 14px;
+      font-size: 18px;
       letter-spacing: 0;
       cursor: pointer;
       -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
@@ -9902,7 +9909,7 @@ Contact Form Style 01
     color: #ffffff;
     border-color: #C27433;
     background-color: #C27433;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
     font-family: "Shree_Devanagari_714", sans-serif;
     border-radius: 6px;
@@ -9981,7 +9988,7 @@ Contact Form Style 01
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
-      font-size: 14px;
+      font-size: 20px;
       color: #C27433;
       border: 0 none; }
 
@@ -9999,7 +10006,7 @@ Contact Form Style 01
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-size: 14px;
+    font-size: 20px;
     color: #C27433;
     border: 0 none;
     background: transparent;
@@ -10104,7 +10111,7 @@ Contact Form Style 01
 
 .about--creative .content .title--creative h3.heading {
   color: #fff;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -10135,7 +10142,7 @@ Contact Form Style 01
     font-weight: 700; }
 
 .about--creative .content p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.67;
   color: #ffffff;
   margin-bottom: 45px;
@@ -10146,7 +10153,7 @@ Contact Form Style 01
 .about--creative .content a.about-btn {
   background-color: transparent;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 20px;
   color: #fff;
   font-family: "Shree_Devanagari_714", sans-serif;
   white-space: nowrap;
@@ -10212,7 +10219,7 @@ Contact Form Style 01
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   font-family: "Shree_Devanagari_714", sans-serif;
   font-weight: 600;
-  font-size: 14px; }
+  font-size: 20px; }
   .call-to-action button i {
     font-size: 12px;
     margin-left: 10px;
@@ -10226,7 +10233,7 @@ Contact Form Style 01
   text-align: center; }
   .call-to-action.callto-action--1 .content h6 {
     color: #fff;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -10259,7 +10266,7 @@ Contact Form Style 01
   margin-bottom: 20px; }
 
 .essential-cta p {
-  font-size: 18px;
+  font-size: 20px;
   max-width: 580px;
   line-height: 1.89;
   color: #fff;
@@ -10859,7 +10866,7 @@ Contact Form Style 01
       -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
       box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
       padding: 8px 10px;
-      font-size: 14px;
+      font-size: 20px;
       white-space: nowrap;
       border-radius: 5px; }
     .social-icon.tooltip-layout li a.hint--white[aria-label]::before {
@@ -11056,7 +11063,7 @@ a {
     -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
     padding: 8px 10px;
-    font-size: 14px;
+    font-size: 20px;
     white-space: normal;
     border-radius: 5px;
     max-width: 160px;
@@ -11379,7 +11386,7 @@ a {
   animation-name: fadeOutUp; }
 
 .hero-content-2 h6 {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 33px;
   font-weight: 700;
   text-transform: capitalize;
@@ -11395,7 +11402,7 @@ a {
       line-height: 32px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .hero-content-2 h6 {
-      font-size: 16px;
+      font-size: 20px;
       line-height: 33px; } }
   @media only screen and (max-width: 767px) {
     .hero-content-2 h6 {
@@ -11455,15 +11462,15 @@ a {
       line-height: 22px; } }
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .hero-content-3 h6 {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 22px; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .hero-content-3 h6 {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 22px; } }
   @media only screen and (max-width: 767px) {
     .hero-content-3 h6 {
-      font-size: 16px;
+      font-size: 20px;
       line-height: 18px; } }
 
 .hero-content-3 h3 {
@@ -11538,14 +11545,14 @@ a {
   .carousle-slider .content .spacing {
     height: 28px; }
   .carousle-slider .content h5 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 14px;
     font-weight: 600;
     font-family: "BigCaslon-Medium", sans-serif;
     line-height: 1.23; }
   .carousle-slider .content p {
     line-height: 1.58;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
     font-family: "Shree_Devanagari_714", sans-serif;
     color: #333333;
@@ -11575,7 +11582,7 @@ a {
       font-size: 22px; } }
 
 .case-slider-content .text {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.67; }
 
 /*==============================
@@ -11608,7 +11615,7 @@ Countdown Area
   .countdown-style-1 .timer-grid > div span.count-inner p {
     margin: 0;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 20px;
     color: #ffffff; }
 
 .countdown-style-1.bg-solid-grey .timer-grid > div span.time-count {
@@ -11717,7 +11724,7 @@ Progress Charts
   .progress-charts .progress {
     height: 4px;
     overflow: visible;
-    font-size: 14px;
+    font-size: 20px;
     background-color: #f5f5f5;
     border-radius: 0; }
     .progress-charts .progress .progress-bar {
@@ -11735,7 +11742,7 @@ Progress Charts
         color: #222;
         right: -7px;
         top: -35px;
-        font-size: 14px;
+        font-size: 20px;
         font-weight: 600; }
 
 .radial-progress,
@@ -11756,7 +11763,7 @@ Progress Charts
     transform: translateY(-50%); }
     .radial-progress .circle-text span.count,
     .radial-progress--2 .circle-text span.count {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1;
       font-weight: 600;
       color: #222222;
@@ -11988,7 +11995,7 @@ Progress Charts
           height: 40px;
           width: 40px;
           line-height: 40px;
-          font-size: 16px;
+          font-size: 20px;
           font-weight: 600;
           color: #fff;
           background: inherit;
@@ -12025,7 +12032,7 @@ Progress Charts
         -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
         transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
       .bk-gradation .item-grid .content h5.heading {
-        font-size: 16px;
+        font-size: 20px;
         margin-bottom: 12px; }
     .bk-gradation .item-grid:first-child .line {
       display: none; }
@@ -12086,7 +12093,7 @@ Progress Charts
     margin-top: 30px; }
     @media only screen and (max-width: 767px) {
       .typed-text .content p {
-        font-size: 16px;
+        font-size: 20px;
         line-height: 28px; } }
 
 /* ========================
@@ -12105,7 +12112,7 @@ Pricing PLans
     border-right: 1px solid rgba(51, 51, 51, 0.1);
     text-align: center; }
     .ht-pricing-list-view thead tr th.pricing-header .heading-h4 {
-      font-size: 16px;
+      font-size: 20px;
       color: #222222;
       font-family: "BigCaslon-Medium", sans-serif;
       font-weight: 600;
@@ -12113,7 +12120,7 @@ Pricing PLans
       line-height: 1.23;
       margin: 0; }
     .ht-pricing-list-view thead tr th.pricing-header .heading-h6 {
-      font-size: 14px;
+      font-size: 20px;
       color: #222222;
       font-family: "BigCaslon-Medium", sans-serif;
       font-weight: 600;
@@ -12163,7 +12170,7 @@ Pricing PLans
       .ht-pricing-list-view thead tr th.pricing-header .price-wrap .price-wrap-inner span {
         color: #222222; }
         .ht-pricing-list-view thead tr th.pricing-header .price-wrap .price-wrap-inner span.currency {
-          font-size: 18px;
+          font-size: 20px;
           margin-bottom: 0; }
         .ht-pricing-list-view thead tr th.pricing-header .price-wrap .price-wrap-inner span.price {
           font-size: 36px !important;
@@ -12171,7 +12178,7 @@ Pricing PLans
           margin: 0 4px;
           font-weight: 600 !important; }
         .ht-pricing-list-view thead tr th.pricing-header .price-wrap .price-wrap-inner span.period {
-          font-size: 14px;
+          font-size: 20px;
           margin-bottom: 0;
           color: #999;
           -webkit-align-self: flex-end;
@@ -12202,7 +12209,7 @@ Pricing PLans
         padding: 9px 0; }
         .ht-pricing-list-view tbody tr td.price-list ul li span.item-checked {
           color: #7ed321;
-          font-size: 16px; }
+          font-size: 20px; }
         .ht-pricing-list-view tbody tr td.price-list ul li.ft--foot {
           padding: 30px 10px 40px; }
 			.ht-pricing-list-view thead tr.title th.pricing-header {
@@ -12254,7 +12261,7 @@ Pricing PLans
       font-size: 41px; } }
 
 .maintanence-wrapper .inner .maintanence-text {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.95;
   margin-bottom: 35px;
   max-width: 670px;
@@ -12265,7 +12272,7 @@ Pricing PLans
   @media only screen and (max-width: 767px) {
     .maintanence-wrapper .inner .maintanence-text {
       max-width: 564px;
-      font-size: 16px; } }
+      font-size: 20px; } }
 
 .maintanence-wrapper .inner .maintanence-form {
   max-width: 700px;
@@ -12316,7 +12323,7 @@ Pricing PLans
 .maintanence-wrapper .inner .form-desc {
   margin-top: 22px;
   color: #fff;
-  font-size: 14px; }
+  font-size: 20px; }
 
 .maintenance-social-networks {
   position: fixed;
@@ -12346,7 +12353,7 @@ Pricing PLans
         overflow: hidden;
         z-index: 1;
         line-height: 1.58;
-        font-size: 14px;
+        font-size: 20px;
         font-weight: 500; }
         .maintenance-social-networks .inner a span::before {
           content: "";
@@ -12461,7 +12468,7 @@ Testimonial Area
       flex-grow: 1;
       margin-left: 20px; }
       .testimonial_style--1 .content .testimonial-info .clint-info h6 {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1.388;
         margin-bottom: 6px;
         color: #222222;
@@ -12471,7 +12478,7 @@ Testimonial Area
         color: #333333;
         font-weight: 500;
         line-height: 1.58;
-        font-size: 14px;
+        font-size: 20px;
         font-family: "BigCaslon-Medium", sans-serif; }
   .testimonial_style--1 .content .testimonial-quote {
     padding: 2px 5px 0 0;
@@ -12594,7 +12601,7 @@ Testimonial Area
       color: #ffb944;
       font-size: 12px; }
   .testimonial_style--2 .content p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.88; }
   .testimonial_style--2 .content .testimonial-info {
     position: relative;
@@ -12625,7 +12632,7 @@ Testimonial Area
       flex-grow: 1;
       margin-left: 20px; }
       .testimonial_style--2 .content .testimonial-info .clint-info h6 {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1.388;
         margin-bottom: 4px;
         font-family: "BigCaslon-Medium", sans-serif; }
@@ -12633,7 +12640,7 @@ Testimonial Area
         font-weight: 500;
         letter-spacing: 0em;
         line-height: 1.58;
-        font-size: 14px;
+        font-size: 20px;
         font-family: "BigCaslon-Medium", sans-serif; }
     .testimonial_style--2 .content .testimonial-info .testimonial-quote {
       position: absolute;
@@ -12736,7 +12743,7 @@ Testimonial Area
     .testimonial-nav-content .testimonial-nav .content .rating li i {
       padding: 0 2px;
       color: #ffb944;
-      font-size: 18px; }
+      font-size: 20px; }
   .testimonial-nav-content .testimonial-nav .content .testimonial-info .clint-info h6 {
     color: #fff;
     font-size: 20px;
@@ -12763,7 +12770,7 @@ Testimonial Area
 
 .testimonial-nav-content.testimonial-content--2 .testimonial-nav .content .testimonial-info .clint-info h6 {
   color: #222222;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   display: inline-block;
   margin-bottom: 0;
@@ -12822,7 +12829,7 @@ Testimonial Area
   .testimonanial-style--3 .testimonial-info .clint-info {
     margin-left: 20px; }
     .testimonanial-style--3 .testimonial-info .clint-info h6 {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.388;
       margin-bottom: 4px;
       font-family: "BigCaslon-Medium", sans-serif;
@@ -12831,7 +12838,7 @@ Testimonial Area
       font-weight: 500;
       letter-spacing: 0em;
       line-height: 1.58;
-      font-size: 14px;
+      font-size: 20px;
       font-family: "BigCaslon-Medium", sans-serif;
       color: #ffffff; }
 
@@ -12872,7 +12879,7 @@ Testimonial Area
       text-align: left;
       margin-left: 20px; }
       .testimonial_style--4 .content .testimonial-info .clint-info h6 {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1.388;
         margin-bottom: 6px;
         color: #fff;
@@ -12882,7 +12889,7 @@ Testimonial Area
         color: rgba(255, 255, 255, 0.6);
         font-weight: 500;
         line-height: 1.58;
-        font-size: 14px;
+        font-size: 20px;
         font-family: "BigCaslon-Medium", sans-serif; }
 
 /* ================================
@@ -13010,7 +13017,7 @@ Testimonial Area
     padding-top: 100px;
     padding-bottom: 100px; }
     .error-not-found .error-inner .error-text p {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.95;
       max-width: 600px;
       margin: 0 auto; }
@@ -13027,7 +13034,7 @@ Tabs Area
   color: #222222; }
 
 .tab-content > .tab-pane {
-  font-size: 14px; }
+  font-size: 20px; }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
@@ -13110,7 +13117,7 @@ Tabs Area
     transition: all 0.3s ease-in-out; }
     @media only screen and (max-width: 767px) {
       .audio-list-tab ul li a {
-        font-size: 16px;
+        font-size: 20px;
         line-height: 22px;
         margin-bottom: 10px; } }
     .audio-list-tab ul li a::before {
@@ -13157,7 +13164,7 @@ Tabs Area
     margin-left: 110px; }
     @media only screen and (max-width: 767px) {
       .audio-track .info h3 {
-        font-size: 16px;
+        font-size: 20px;
         line-height: 22px;
         margin-left: 80px; } }
   .audio-track svg {
@@ -13374,7 +13381,7 @@ audio {
   .video-btn a .watch-text {
     color: #333333;
     margin: 32px 0 0;
-    font-size: 14px;
+    font-size: 20px;
     border: 0 none;
     padding: 0;
     display: block;
@@ -13518,7 +13525,7 @@ Breadcaump Area
     display: inline-block;
     position: relative; }
     .breadcaump-area.breadcaump-title-bar .breadcaump-inner .breadcrumb-insite ul.core-breadcaump li a {
-      font-size: 14px;
+      font-size: 20px;
       font-weight: 500;
       line-height: 1.58;
       position: relative;
@@ -13640,7 +13647,7 @@ Breadcaump Area
         .instagram-grid-wrap .item-grid.grid-style--1 .item-info .inner a {
           position: relative;
           color: #fff;
-          font-size: 14px;
+          font-size: 20px;
           display: inline-block;
           margin: 0 5px; }
           .instagram-grid-wrap .item-grid.grid-style--1 .item-info .inner a i {
@@ -13856,7 +13863,7 @@ Breadcaump Area
             margin-bottom: 0px;
             line-height: 20px; }
             .mini-cart .shopping-cart .shop-inner ul.product-list li .content .inner h4 a {
-              font-size: 16px;
+              font-size: 20px;
               font-weight: 400;
               color: #333333;
               -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -13866,7 +13873,7 @@ Breadcaump Area
                 color: #C27433; }
               @media only screen and (max-width: 575px) {
                 .mini-cart .shopping-cart .shop-inner ul.product-list li .content .inner h4 a {
-                  font-size: 14px; } }
+                  font-size: 20px; } }
           .mini-cart .shopping-cart .shop-inner ul.product-list li .content .inner .quatity span {
             display: inline-block;
             font-size: 15px;
@@ -13876,7 +13883,7 @@ Breadcaump Area
             position: absolute;
             right: 0;
             top: 4px;
-            font-size: 18px;
+            font-size: 20px;
             border: 0 none; }
             .mini-cart .shopping-cart .shop-inner ul.product-list li .content .delete-btn:hover {
               color: #C27433; }
@@ -13897,7 +13904,7 @@ Breadcaump Area
           color: #333333;
           padding-left: 3px; }
       .mini-cart .shopping-cart .footer a.cart-btn {
-        font-size: 14px;
+        font-size: 20px;
         font-weight: 600;
         color: #ffffff;
         border-color: #C27433;
@@ -13971,7 +13978,7 @@ Start Dropdown Menu
         font-weight: 500;
         line-height: 1.58;
         color: #ffffff;
-        font-size: 14px;
+        font-size: 20px;
         -webkit-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
         -o-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
         transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
@@ -14002,7 +14009,7 @@ Start Dropdown Menu
         position: relative; }
         .dropdown__menu li.drop-lavel--2 > a::before {
           content: "\f105";
-          font-size: 14px;
+          font-size: 20px;
           position: absolute;
           top: 50%;
           right: 0;
@@ -14064,7 +14071,7 @@ Start Dropdown Menu
       padding-bottom: 12px;
       text-transform: uppercase;
       font-weight: 600;
-      font-size: 14px;
+      font-size: 20px;
       border: 0 solid transparent;
       border-bottom: 1px solid #444;
       color: #ffffff;
@@ -14077,7 +14084,7 @@ Start Dropdown Menu
       font-weight: 500;
       line-height: 1.58;
       color: #fff;
-      font-size: 14px;
+      font-size: 20px;
       -webkit-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
       -o-transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
       transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
@@ -14129,7 +14136,7 @@ Start Dropdown Menu
     -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
     .brook__toolbar .inner a i {
-      font-size: 16px; }
+      font-size: 20px; }
     .brook__toolbar .inner a[class*=hint--] {
       position: relative;
       display: inline-block;
@@ -14166,7 +14173,7 @@ Start Dropdown Menu
         background: #000;
         color: #fff;
         padding: 8px 10px;
-        font-size: 14px;
+        font-size: 20px;
         line-height: 14px;
         white-space: nowrap;
         border-radius: 5px;
@@ -14452,13 +14459,13 @@ h4.heading-h4 {
   font-size: 24px; }
   @media only screen and (max-width: 767px) {
     h4.heading-h4 {
-      font-size: 18px; } }
+      font-size: 20px; } }
 
 h5.heading-h5 {
-  font-size: 18px; }
+  font-size: 20px; }
   @media only screen and (max-width: 767px) {
     h5.heading-h5 {
-      font-size: 16px; }
+      font-size: 20px; }
       h5.heading-h5 br {
         display: none; } }
   h5.heading-h5.font-19 {
@@ -14467,11 +14474,11 @@ h5.heading-h5 {
     font-size: 20px; }
 
 h6.heading-h6 {
-  font-size: 14px; }
+  font-size: 20px; }
   h6.heading-h6.font-17 {
     font-size: 17px; }
   h6.heading-h6.font-16 {
-    font-size: 16px; }
+    font-size: 20px; }
   h6.heading-h6.font-15 {
     font-size: 15px; }
 
@@ -14484,7 +14491,7 @@ p.bk_pra {
   max-width: 100%;
   font-weight: 500;
   line-height: 1.58;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Shree_Devanagari_714", sans-serif; }
 
 	.archive-shop-inner.bk_pra > a {
@@ -14503,34 +14510,34 @@ p.bk_pra {
   p.bk_pra.heading-font {
     font-family: "louis_george_caferegular";
     line-height: 1.32;
-    font-size: 16px;
+    font-size: 20px;
     color: #333333; }
     @media only screen and (max-width: 767px) {
       p.bk_pra.heading-font {
-        font-size: 14px; } }
+        font-size: 20px; } }
   p.bk_pra.text-white {
     color: #ffffff; }
   p.bk_pra.font-16 {
-    font-size: 16px; }
+    font-size: 20px; }
     @media only screen and (max-width: 767px) {
       p.bk_pra.font-16 {
-        font-size: 14px; } }
+        font-size: 20px; } }
   p.bk_pra.font-20 {
     font-size: 20px; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       p.bk_pra.font-20 {
-        font-size: 16px; } }
+        font-size: 20px; } }
     @media only screen and (max-width: 767px) {
       p.bk_pra.font-20 {
-        font-size: 14px; } }
+        font-size: 20px; } }
   p.bk_pra.font-18 {
-    font-size: 18px; }
+    font-size: 20px; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       p.bk_pra.font-18 {
-        font-size: 16px; } }
+        font-size: 20px; } }
     @media only screen and (max-width: 767px) {
       p.bk_pra.font-18 {
-        font-size: 14px; } }
+        font-size: 20px; } }
   p.bk_pra.secondary-font {
     font-family: "Montserrat", sans-serif; }
   p.bk_pra.heading-font2 {
@@ -14556,7 +14563,7 @@ p.bk_pra {
   font-weight: 500;
   letter-spacing: 0em;
   line-height: 1.58;
-  font-size: 14px;
+  font-size: 20px;
   color: #333333;
   margin: 0; }
   .dropcaps p span {
@@ -14600,7 +14607,7 @@ p.bk_pra {
   position: relative;
   margin: 37px 0 44px !important;
   padding: 0 0 0 53px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.625; }
   .brook-quote::before {
@@ -14616,7 +14623,7 @@ p.bk_pra {
     font-weight: 900;
     color: #C27433; }
   .brook-quote .quote-text {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 1.625;
     color: #222222;
@@ -14638,7 +14645,7 @@ List Area
       top: 0;
       left: -36px;
       display: block;
-      font-size: 18px;
+      font-size: 20px;
       color: #7ed321;
       font-family: Font Awesome\ 5 Free;
       font-weight: 900; }
@@ -14647,7 +14654,7 @@ List Area
     margin-bottom: 0;
     font-weight: 500;
     line-height: 1.58;
-    font-size: 14px; }
+    font-size: 20px; }
 
 .bk-list--2 .list-header {
   padding-left: 14px;
@@ -14713,13 +14720,13 @@ List Area
       margin-bottom: 3px; }
       .bk-list--2 .list-header.with-number--body .marker {
         color: #333333;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 500;
         letter-spacing: 0em;
         line-height: 1.38;
         font-family: "louis_george_caferegular"; }
       .bk-list--2 .list-header.with-number--body h6.heading {
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 500;
         letter-spacing: 0em;
         line-height: 1.38;
@@ -14778,7 +14785,7 @@ Pricing Box
       -ms-flex-align: start;
       align-items: flex-start; }
       .procing-box .header .price h3.currenct {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 0; }
       .procing-box .header .price h3.heading {
         font-size: 48px;
@@ -14827,7 +14834,7 @@ Pricing Box
         line-height: 1.75;
         margin-bottom: 15px; }
       .price-style-3 .procing-box .header .price-area .header-title .title {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 500;
         line-height: 1.34;
         margin-bottom: 15px;
@@ -14855,7 +14862,7 @@ Pricing Box
 .more-pricing {
   text-align: center; }
   .more-pricing p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.75;
     color: #777; }
     .more-pricing p a {
@@ -14952,7 +14959,7 @@ Pricing Box
     .icon-box .inner .content a.icon-btn span {
       padding: 5px 0;
       font-weight: 600;
-      font-size: 14px; }
+      font-size: 20px; }
     .icon-box .inner .content a.icon-btn i {
       font-size: 12px;
       color: #C27433;
@@ -15054,7 +15061,7 @@ Pricing Box
   font-weight: 500; }
 
 .vibrate-style .content p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.75;
   color: #777;
   font-weight: 400; }
@@ -15205,12 +15212,12 @@ Dividers Area
     position: absolute;
     top: 40px;
     left: 41px;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1; }
   .message-box .content {
     font-weight: 500;
     line-height: 1.58;
-    font-size: 14px;
+    font-size: 20px;
     font-family: "Shree_Devanagari_714", sans-serif; }
   .message-box.bg_cat--1 {
     background: #eee; }
@@ -15252,7 +15259,7 @@ Dividers Area
   border: 0 none; }
   .bk-accordion .card-header h5 a.acc-btn {
     color: #111;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.2;
     padding: 0;
     font-weight: 600;
@@ -15276,7 +15283,7 @@ Dividers Area
       font-weight: 900;
       content: "\f107";
       right: 16px;
-      font-size: 16px; }
+      font-size: 20px; }
     .bk-accordion .card-header h5 a.acc-btn[aria-expanded="true"] {
       background: #C27433;
       color: #ffffff; }
@@ -15288,7 +15295,7 @@ Dividers Area
   font-weight: 500;
   letter-spacing: 0em;
   line-height: 1.58;
-  font-size: 14px;
+  font-size: 20px;
   font-family: "Shree_Devanagari_714", sans-serif;
   border: 0 none;
   -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.07);
@@ -15320,7 +15327,7 @@ Dividers Area
     -webkit-appearance: none;
     display: block;
     position: relative;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.2;
     padding: 14px 0 14px 26px; }
     .bk-accordion-style--2 .card-header h5 a.acc-btn::before {
@@ -15333,7 +15340,7 @@ Dividers Area
       font-weight: 900;
       content: "+";
       left: 0;
-      font-size: 18px;
+      font-size: 20px;
       color: #222222;
       font-weight: 700; }
     .bk-accordion-style--2 .card-header h5 a.acc-btn[aria-expanded="true"] {
@@ -15347,7 +15354,7 @@ Dividers Area
   padding: 5px 0 21px 26px;
   font-weight: 500;
   line-height: 1.58;
-  font-size: 14px;
+  font-size: 20px;
   font-family: "Shree_Devanagari_714", sans-serif;
   border: 0 none;
   -webkit-box-shadow: inherit;
@@ -15371,7 +15378,7 @@ Dividers Area
   margin-bottom: 14px; }
 
 .gmap-marker-content {
-  font-size: 14px; }
+  font-size: 20px; }
   .gmap-marker-content i {
     font-size: 15px;
     margin-right: 5px;
@@ -15837,7 +15844,7 @@ body.loaded .page-loading {
         -webkit-transform: translateY(10px);
         -ms-transform: translateY(10px);
         transform: translateY(10px);
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1.4;
         color: #fff;
         margin: 0;
@@ -15856,7 +15863,7 @@ body.loaded .page-loading {
               font-size: 17px; } }
       .portfolio.portfolio_style--1 .port-overlay-info .hover-action .category {
         font-weight: 500;
-        font-size: 14px;
+        font-size: 20px;
         opacity: 0;
         -webkit-transition: .3s ease-out 0s;
         -o-transition: .3s ease-out 0s;
@@ -16387,7 +16394,7 @@ body.loaded .page-loading {
       font-family: Montserrat, Helvetica, Arial, sans-serif;
       font-weight: 500;
       color: #535353;
-      font-size: 14px; }
+      font-size: 20px; }
       .porfolio-swip-horizontal .fraction span.current {
         color: #fff; }
 
@@ -16468,7 +16475,7 @@ body.loaded .page-loading {
       -webkit-transform: translate(-50%, -50%) scale(0.9);
       -ms-transform: translate(-50%, -50%) scale(0.9);
       transform: translate(-50%, -50%) scale(0.9);
-      font-size: 18px;
+      font-size: 20px;
       text-align: center;
       border-radius: 50%;
       visibility: hidden;
@@ -16581,7 +16588,7 @@ body.loaded .page-loading {
         flex-shrink: 0;
         margin-left: 10px;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 20px;
         color: #333333; }
   .portfolio-cation:hover .port-overlay-info .hover-action {
     -webkit-transform: translateY(0);
@@ -16602,7 +16609,7 @@ body.loaded .page-loading {
     .messonry-button button span.filter-text {
       font-weight: 600;
       line-height: 1.58;
-      font-size: 14px;
+      font-size: 20px;
       color: #333333;
       -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
       -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -16656,7 +16663,7 @@ body.loaded .page-loading {
     color: #C27433; }
 
 .toggle-btn .loadMore {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
   color: #222222;
   border: 0 none;
@@ -16689,7 +16696,7 @@ body.loaded .page-loading {
       font-weight: 600;
       color: #333;
       line-height: 1.58;
-      font-size: 14px; }
+      font-size: 20px; }
     .messonry-button--2 button span.filter-counter {
       position: absolute;
       top: -7px;
@@ -16811,7 +16818,7 @@ Has Center
     .has-center-content .has-centerinner .content .bkseparator--55 {
       height: 24px; } }
   .has-center-content .has-centerinner .content .read-more-btn a {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     -webkit-transition: 0.4s ease-in-out;
     -o-transition: 0.4s ease-in-out;
@@ -17106,7 +17113,7 @@ Has Center
             .portfolio-type2-content .type-portfolio-wrapper-2 .type-portfolio2 h3 a {
               font-size: 22px; } }
           .portfolio-type2-content .type-portfolio-wrapper-2 .type-portfolio2 h3 a span {
-            font-size: 18px;
+            font-size: 20px;
             vertical-align: middle;
             margin-right: 20px; }
       .portfolio-type2-content .type-portfolio-wrapper-2 .type-portfolio2 h3 a.active {
@@ -17301,7 +17308,7 @@ Has Center
             position: absolute;
             top: 13px;
             left: 0;
-            font-size: 18px;
+            font-size: 20px;
             vertical-align: middle;
             margin-right: 20px;
             color: rgba(0, 0, 0, 0.3);
@@ -17365,14 +17372,14 @@ Portfolio Details
     color: #222222;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 20px;
     margin-bottom: 12px; }
   .portfolio-details-list .details-list span {
     color: #C27433;
     font-weight: 500;
     letter-spacing: 0em;
     line-height: 1.58;
-    font-size: 14px;
+    font-size: 20px;
     display: block; }
     .portfolio-details-list .details-list span a {
       color: #999;
@@ -17545,14 +17552,14 @@ Portfolio Nav Page
       display: inline; }
     .blog-grid .post-content .post-inner .post-meta .post-date {
       line-height: 1.58;
-      font-size: 14px;
+      font-size: 20px;
       font-weight: 500;
       color: #333333; }
     .blog-grid .post-content .post-inner .post-meta .post-category {
       padding-left: 15px;
       margin-left: 7px;
       line-height: 1.58;
-      font-size: 14px;
+      font-size: 20px;
       font-weight: 500; }
       .blog-grid .post-content .post-inner .post-meta .post-category::before {
         content: "|";
@@ -17599,15 +17606,15 @@ Portfolio Nav Page
         bottom: 0;
         background: rgba(0, 0, 0, 0.5); }
     .blog-grid .post-quote h5.heading a {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.38;
       color: #fff; }
     .blog-grid .post-quote h4.heading a {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.38;
       color: #fff; }
     .blog-grid .post-quote h6.quote-name {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.38;
       color: #fff;
       margin: 0;
@@ -17784,7 +17791,7 @@ Portfolio Nav Page
 .brook-pagination-wrapper .brook-pagination {
   padding: 0;
   margin: -5px;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
   list-style: none; }
   .brook-pagination-wrapper .brook-pagination li {
@@ -17954,7 +17961,7 @@ Portfolio Nav Page
   font-weight: 500;
   letter-spacing: 0em;
   line-height: 1.58;
-  font-size: 14px;
+  font-size: 20px;
   color: #333333; }
 
 .post-meta .post-category {
@@ -17963,7 +17970,7 @@ Portfolio Nav Page
   font-weight: 500;
   letter-spacing: 0em;
   line-height: 1.58;
-  font-size: 14px; }
+  font-size: 20px; }
   .post-meta .post-category a {
     color: #333333; }
   .post-meta .post-category::before {
@@ -18152,7 +18159,7 @@ Portfolio Nav Page
   font-size: 50px; }
 
 .brook-pagination-wrapper .load-more-button a {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
   color: #191970; }
   .brook-pagination-wrapper .load-more-button a i {
@@ -18169,7 +18176,7 @@ Blog Details
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   font-weight: 500;
   line-height: 1.58;
-  font-size: 14px;
+  font-size: 20px;
   position: relative;
   padding-left: 5px; }
   .blog-tag-list a::before {
@@ -18228,7 +18235,7 @@ Blog Details
           line-height: 1.5; } }
       .post-nav-lisnt .nav-item a .link-text {
         position: relative;
-        font-size: 14px;
+        font-size: 20px;
         font-weight: 500;
         color: #999;
         margin-bottom: 28px; }
@@ -18339,7 +18346,7 @@ Blog Main Quote
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   color: #999999;
   line-height: 1.58;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500; }
   .blog-post-return-button a i {
     font-size: 12px;
@@ -18389,7 +18396,7 @@ Blog Main Quote
       padding-right: 0; } }
 
 .bl-sidebar .widget-title {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 20px;
   padding-bottom: 11px;
   border-bottom: 1px solid #eee;
@@ -18439,7 +18446,7 @@ Blog Main Quote
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       line-height: 1;
-      font-size: 18px;
+      font-size: 20px;
       color: #C27433; }
     .bl-sidebar.search .search-box button:hover span {
       color: #fff; }
@@ -18463,7 +18470,7 @@ Blog Main Quote
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     font-weight: 500;
     line-height: 1.58;
-    font-size: 14px; }
+    font-size: 20px; }
     .bl-sidebar.category .category-list li a:hover {
       color: #C27433; }
 
@@ -18502,7 +18509,7 @@ Blog Main Quote
       -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
       transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
       display: block;
-      font-size: 14px;
+      font-size: 20px;
       font-weight: 500;
       padding: 10px;
       color: #333333; }
@@ -18553,7 +18560,7 @@ Shop Sidebar
     background: #fff; }
 
 .shop-sidebar .widget-title {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 20px;
   padding-bottom: 11px;
   border-bottom: 1px solid #eee;
@@ -18602,7 +18609,7 @@ Shop Sidebar
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       line-height: 1;
-      font-size: 18px;
+      font-size: 20px;
       color: #C27433; }
     .shop-sidebar.search .search-box button:hover span {
       color: #fff; }
@@ -18689,7 +18696,7 @@ Shop Sidebar
       -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
       transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
       display: block;
-      font-size: 14px;
+      font-size: 20px;
       font-weight: 500;
       padding: 10px;
       color: #333333; }
@@ -18707,7 +18714,7 @@ Shop Sidebar
 
 .price--output span {
   color: #333;
-  font-size: 14px; }
+  font-size: 20px; }
 
 .price--filter {
   display: inline-block; }
@@ -18789,7 +18796,7 @@ Shop Sidebar
       -webkit-box-flex: 1;
       -ms-flex-positive: 1;
       flex-grow: 1;
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 500; }
   .price__output--wrap .price--filter {
     display: inline-block; }
@@ -18815,7 +18822,7 @@ Shop Sidebar
         display: inline-block;
         position: relative;
         color: #999999;
-        font-size: 14px; }
+        font-size: 20px; }
         .nextprev-btn .navlist .navitem a::before {
           position: absolute;
           top: 1px;
@@ -18883,7 +18890,7 @@ Shop Sidebar
   .single-product-details-side .price {
     margin-bottom: 42px; }
     .single-product-details-side .price p {
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 600; }
   .single-product-details-side .description {
     margin-bottom: 44px; }
@@ -18926,7 +18933,7 @@ Shop Sidebar
         height: 53px;
         font-weight: 600;
         line-height: 52px;
-        font-size: 16px; }
+        font-size: 20px; }
         .single-product-details-side .product-action a.addtocart i {
           margin-right: 19px; }
       .single-product-details-side .product-action a.wislist {
@@ -18955,7 +18962,7 @@ Shop Sidebar
     -ms-flex-align: center;
     align-items: center; }
     .single-product-details-side .product-meta .meta-item h6 {
-      font-size: 14px;
+      font-size: 20px;
       text-transform: uppercase;
       min-width: 100px;
       margin: 0 15px 0 0; }
@@ -18964,7 +18971,7 @@ Shop Sidebar
       -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
       -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
       transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-      font-size: 14px;
+      font-size: 20px;
       font-weight: 500; }
     .single-product-details-side .product-meta .meta-item + .meta-item {
       margin-top: 24px; }
@@ -18978,7 +18985,7 @@ Shop Sidebar
   margin-bottom: 6px; }
 
 .single_product_inner .price span {
-  font-size: 16px; }
+  font-size: 20px; }
   .single_product_inner .price span.new {
     border-bottom: 1px solid #222222;
     color: #C27433;
@@ -19052,7 +19059,7 @@ Shop Sidebar
         background: #222222 none repeat scroll 0 0;
         color: #fff;
         display: block;
-        font-size: 14px;
+        font-size: 20px;
         height: 36px;
         line-height: 36px;
         text-align: center;
@@ -19112,7 +19119,7 @@ Shop Sidebar
 
 .cart_qun_inner span {
   color: #050505;
-  font-size: 16px;
+  font-size: 20px;
   padding-right: 12px; }
 
 .cart_qun_inner .cart-plus-minus {
@@ -19167,7 +19174,7 @@ Shop Sidebar
       .product_review .single_review_content .rating li {
         margin-right: 3px; }
         .product_review .single_review_content .rating li i {
-          font-size: 16px;
+          font-size: 20px;
           color: #efc71f; }
     .product_review .single_review_content .classs__review__inner h4 {
       color: #000;
@@ -19184,7 +19191,7 @@ Shop Sidebar
       font-weight: 400;
       margin-bottom: 10px;
       text-transform: capitalize;
-      font-size: 14px; }
+      font-size: 20px; }
     .product_review .single_review_content .classs__review__inner .input__box input {
       border: 1px solid #eeeeee;
       border-radius: 5px;
@@ -19246,7 +19253,7 @@ Shop Sidebar
   .single_product_inner {
     margin-top: 30px; }
   .product_review .description_nav a {
-    font-size: 16px; } }
+    font-size: 20px; } }
 
 @media only screen and (max-width: 575px) {
   .product_review .description_nav a {
@@ -19274,7 +19281,7 @@ Shop Sidebar
   .product_review .single_review_content {
     padding: 26px 9px; }
   .product_review .single_review_content p {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 25px;
     padding: 0 10px; } }
 
@@ -19296,7 +19303,7 @@ Shop Sidebar
     .cart-table .table thead tr th {
       text-align: center;
       border: none;
-      font-size: 16px;
+      font-size: 20px;
       text-transform: uppercase;
       font-weight: 600;
       color: #222222;
@@ -19336,7 +19343,7 @@ Shop Sidebar
     background-color: #f6f7f8; }
 
 .cart-table td.pro-title a {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   color: #222222; }
 
@@ -19431,7 +19438,7 @@ Shop Sidebar
     .calculate-shipping form .nice-select .current {
       display: block;
       line-height: 24px;
-      font-size: 14px;
+      font-size: 20px;
       color: #333333; }
   .calculate-shipping form input {
     width: 100%;
@@ -19503,7 +19510,7 @@ Shop Sidebar
       font-weight: 700;
       margin-bottom: 30px; }
     .cart-summary .cart-summary-wrap p {
-      font-size: 14px;
+      font-size: 20px;
       font-weight: 600;
       line-height: 23px;
       color: #222222; }
@@ -19512,7 +19519,7 @@ Shop Sidebar
     .cart-summary .cart-summary-wrap h2 {
       border-top: 1px solid #999999;
       padding-top: 9px;
-      font-size: 18px;
+      font-size: 20px;
       line-height: 23px;
       font-weight: 700;
       color: #000;
@@ -19589,7 +19596,7 @@ Shop Sidebar
 /*-- Checkout Form --*/
 .checkout-form label {
   display: block;
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 12px;
   font-weight: 600;
   text-transform: capitalize;
@@ -19602,7 +19609,7 @@ Shop Sidebar
   border-radius: 50px;
   line-height: 23px;
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 20px;
   height: 45px;
   color: #333333;
   margin-bottom: 15px; }
@@ -19626,7 +19633,7 @@ Shop Sidebar
   border-radius: 50px;
   line-height: 23px;
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 20px;
   color: #333333;
   margin-bottom: 15px; }
   .checkout-form input[type="checkbox"] {
@@ -19643,7 +19650,7 @@ Shop Sidebar
       position: relative;
       padding-left: 30px;
       line-height: 20px;
-      font-size: 14px;
+      font-size: 20px;
       font-weight: 400;
       color: #222222;
       margin: 0; }
@@ -19715,7 +19722,7 @@ Shop Sidebar
     margin: 0; }
     .checkout-cart-total ul li {
       color: #333333;
-      font-size: 14px;
+      font-size: 20px;
       line-height: 23px;
       font-weight: 600;
       display: block;
@@ -19724,7 +19731,7 @@ Shop Sidebar
         color: #222222;
         float: right; }
   .checkout-cart-total p {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 30px;
     font-weight: 600;
     color: #505050;
@@ -19753,7 +19760,7 @@ Shop Sidebar
       position: relative;
       padding-left: 30px;
       line-height: 20px;
-      font-size: 14px;
+      font-size: 20px;
       font-weight: 400;
       color: #222222;
       margin: 0; }
@@ -19793,7 +19800,7 @@ Shop Sidebar
       position: relative;
       padding-left: 30px;
       line-height: 20px;
-      font-size: 14px;
+      font-size: 20px;
       font-weight: 400;
       color: #333333;
       margin: 0; }
@@ -19830,7 +19837,7 @@ Shop Sidebar
   .single-method p {
     display: none;
     margin-top: 8px;
-    font-size: 14px;
+    font-size: 20px;
     color: #222222;
     line-height: 23px; }
 
@@ -19841,7 +19848,7 @@ Shop Sidebar
   border-radius: 50px;
   color: #fff;
   float: left;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   height: 36px;
   line-height: 24px;
@@ -19868,7 +19875,7 @@ Shop Sidebar
     border-right: 1px solid #eeeeee; }
   .compare-table .table tbody tr td.first-column {
     min-width: 180px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: #222222;
     margin: 0;
@@ -19896,7 +19903,7 @@ Shop Sidebar
     .compare-table .table tbody tr td.product-image-title .title {
       float: left;
       clear: both;
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 600;
       color: #222222;
       line-height: 20px;
@@ -19906,15 +19913,15 @@ Shop Sidebar
     margin: 0;
     color: #222222; }
   .compare-table .table tbody tr td.pro-price {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     color: #333333; }
   .compare-table .table tbody tr td.pro-color {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     color: #333333; }
   .compare-table .table tbody tr td.pro-stock {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     color: #333333; }
   .compare-table .table tbody tr td.pro-addtocart .add-to-cart {
@@ -19968,7 +19975,7 @@ Shop Sidebar
       font-size: 20px; }
   .compare-table .table tbody tr td.pro-ratting i {
     color: #222222;
-    font-size: 14px; }
+    font-size: 20px; }
 
 /*------------------------
      My account
@@ -19977,7 +19984,7 @@ Shop Sidebar
   background-color: #fff;
   border: 1px solid #e7e7e7;
   color: #434343;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
   margin: 0 0 30px;
   position: relative;
@@ -20034,19 +20041,19 @@ Shop Sidebar
     margin-bottom: 28px;
     padding-bottom: 30px; }
     .panel-body .account-info-wrapper h4 {
-      font-size: 18px;
+      font-size: 20px;
       letter-spacing: 0.2px;
       margin: 0;
       text-transform: uppercase; }
     .panel-body .account-info-wrapper h5 {
-      font-size: 16px;
+      font-size: 20px;
       letter-spacing: 0.2px;
       margin-top: 7px; }
   .panel-body .billing-info {
     margin-bottom: 20px; }
     .panel-body .billing-info label {
       color: #434343;
-      font-size: 14px;
+      font-size: 20px;
       text-transform: capitalize; }
     .panel-body .billing-info input {
       background: transparent none repeat scroll 0 0;
@@ -20070,7 +20077,7 @@ Shop Sidebar
       .panel-body .billing-back-btn .billing-back a:hover {
         color: #222222; }
       .panel-body .billing-back-btn .billing-back a i {
-        font-size: 18px;
+        font-size: 20px;
         color: #222222; }
     .panel-body .billing-back-btn .billing-btn button {
       background-color: #222222;
@@ -20203,7 +20210,7 @@ Main Components
         position: relative;
         color: #222222; }
     .gradient-wrapper .post-info .inner .main-info .main-info-inner a.post-read-more {
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 700;
       color: #222;
       font-family: "louis_george_caferegular"; }
@@ -20302,7 +20309,7 @@ Main Components
     position: absolute;
     bottom: -130px;
     left: 40px;
-    font-size: 18px;
+    font-size: 20px;
     color: #222;
     font-family: "louis_george_caferegular"; }
     @media only screen and (max-width: 767px) {
@@ -20502,7 +20509,7 @@ Main Components
       display: inline-block;
       border: 1px solid #222222;
       font-weight: 700;
-      font-size: 14px;
+      font-size: 20px;
       padding: 10px 35px 9px 35px;
       text-transform: uppercase;
       text-align: center;
@@ -20567,7 +20574,7 @@ Main Components
       z-index: 1;
       font-weight: 400;
       line-height: 1.18;
-      font-size: 16px;
+      font-size: 20px;
       font-family: "Shree_Devanagari_714", sans-serif;
       color: #C27433;
       padding-top: 41px;
@@ -20606,7 +20613,7 @@ Main Components
           margin-left: 3px; } }
       .mainmenu-wrapper .page_nav ul.mainmenu li.lavel-1.with--drop > a::before {
         content: "\f107";
-        font-size: 14px;
+        font-size: 20px;
         position: absolute;
         top: 50%;
         right: 0;
@@ -20862,7 +20869,7 @@ header.br_header.header-default.vertical-slide-portfolio {
       width: 30px;
       height: 30px;
       text-align: center;
-      font-size: 18px;
+      font-size: 20px;
       line-height: 30px;
       cursor: pointer; }
       .header-default .header-right .mini-cart-button::after {
@@ -21448,7 +21455,7 @@ header.br_header.header-default.header-fixed {
               display: inline-block;
               margin: 5px 15px;
               padding: 5px 0;
-              font-size: 14px;
+              font-size: 20px;
               font-family: "Montserrat", sans-serif; }
               .br_header-sidebar .side-header-inner .header-wrap .header-center .header-social-neworks .inner a span {
                 color: #999;
@@ -21479,7 +21486,7 @@ header.br_header.header-default.header-fixed {
         .br_header-sidebar .side-header-inner .header-wrap .header-bottom .btn-search-click {
           display: block;
           line-height: 0;
-          font-size: 18px;
+          font-size: 20px;
           color: #999999;
           text-align: center; }
           .br_header-sidebar .side-header-inner .header-wrap .header-bottom .btn-search-click:hover {
@@ -21538,7 +21545,7 @@ header.br_header.header-default.header-fixed {
     -ms-flex-positive: 1;
     flex-grow: 1; }
     .single-motive-speach .content h4 {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.4;
       margin-bottom: 21px;
       font-family: "BigCaslon-Medium", sans-serif;
@@ -22244,7 +22251,7 @@ Header Font Family
     position: relative;
 }
 .object-custom-menu li.no-menu > a span {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
     color: #fff;
 }
@@ -22265,7 +22272,7 @@ Header Font Family
       display: block;
       position: relative; }
       .object-custom-menu li.has-mega-menu > a span {
-        font-size: 14px;
+        font-size: 20px;
         font-weight: 600;
         color: #fff;
 		 	}
@@ -22301,7 +22308,7 @@ Header Font Family
         font-weight: 700;
         line-height: 1.5;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 20px;
         color: #fff;
         margin: 0 0 18px; }
       .object-custom-menu li.has-mega-menu .object-submenu li a {
@@ -22309,7 +22316,7 @@ Header Font Family
         padding-bottom: 10px;
         display: block; }
         .object-custom-menu li.has-mega-menu .object-submenu li a span {
-          font-size: 14px;
+          font-size: 20px;
           color: #fff; }
 
 /* ========================
@@ -22347,7 +22354,7 @@ Header Font Family
         .header__digital--broadcast .header-left .bk-menu li a {
           font-weight: 700;
           line-height: 1.18;
-          font-size: 18px;
+          font-size: 20px;
           color: #222222;
           font-family: "louis_george_caferegular";
           -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -22482,7 +22489,7 @@ Button Hire
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     display: inline-block;
     color: #222;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     font-family: "louis_george_caferegular"; }
   .hire-on-top-button:hover .the-arrow {
@@ -22627,7 +22634,7 @@ Button Hire
     .single-portfolio-slide .inner .info .category {
       margin-bottom: 36px; }
       .single-portfolio-slide .inner .info .category a {
-        font-size: 16px;
+        font-size: 20px;
         color: #999;
         font-family: "louis_george_caferegular"; }
     .single-portfolio-slide .inner .info .slide-btn a {
@@ -22637,7 +22644,7 @@ Button Hire
       border: 2px solid rgba(255, 255, 255, 0.3);
       height: 57px;
       line-height: 53px;
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 700;
       color: #fff;
       background: transparent;
@@ -22830,7 +22837,7 @@ Vertical Slider Area
     .single-vertical-slide .slide-inner .info h2.heading a {
       color: #fff; }
   .single-vertical-slide .slide-inner .info .category {
-    font-size: 14px;
+    font-size: 20px;
     color: #fff; }
 
 /*===============================
@@ -22877,7 +22884,7 @@ Indie Musician Area
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
   color: #fff;
   border-color: rgba(255, 255, 255, 0.4);
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
   position: relative;
   display: inline-block;
@@ -23044,10 +23051,10 @@ Vertical Slider Portfolio
             position: absolute;
             top: 20px;
             left: -40px;
-            font-size: 18px;
+            font-size: 20px;
             color: #222222; }
         .fullscreen-slider-wrapper .feature-wrapper .fullscreen-inner .inner .fullpage-btn a {
-          font-size: 18px;
+          font-size: 20px;
           font-weight: 700;
           color: #222;
           font-family: "louis_george_caferegular";
@@ -23257,9 +23264,9 @@ Shop Slide Area
     margin: 0 auto 13px; }
     .product .product-info ul.rating li i {
       color: #ffb805;
-      font-size: 16px; }
+      font-size: 20px; }
   .product .product-info .price {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600; }
     .product .product-info .price span {
       display: inline-block;
@@ -23322,7 +23329,7 @@ Shop Slide Area
         border: 0;
         text-align: center; }
         .product .product-thumbnail .product-action .action-list.tooltip-layout li a i {
-          font-size: 18px; }
+          font-size: 20px; }
         .product .product-thumbnail .product-action .action-list.tooltip-layout li a[class*=hint--] {
           position: relative; }
         .product .product-thumbnail .product-action .action-list.tooltip-layout li a.hint--bounce:after, .product .product-thumbnail .product-action .action-list.tooltip-layout li a.hint--bounce:before {
@@ -23370,7 +23377,7 @@ Shop Slide Area
           -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
           box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
           padding: 8px 10px;
-          font-size: 14px;
+          font-size: 20px;
           white-space: nowrap;
           border-radius: 5px; }
         .product .product-thumbnail .product-action .action-list.tooltip-layout li a.hint--white[aria-label]::after {
@@ -23772,7 +23779,7 @@ Prresentation Area
 
 /* Footer Widget */
 .footer-widget h2.widgettitle {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.2;
   color: #fff;
@@ -23792,7 +23799,7 @@ Prresentation Area
       color: #ffffff;
       display: inline-block;
       padding: 3px 0;
-      font-size: 14px;
+      font-size: 20px;
       font-weight: 500;
       letter-spacing: 0em;
       line-height: 2;
@@ -23810,7 +23817,7 @@ Prresentation Area
   margin-bottom: 0;
   word-wrap: break-word;
   max-width: 100%;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 2;
   font-family: "louis_george_caferegular";
@@ -23844,24 +23851,24 @@ Prresentation Area
   .footer-widget .footer-inner p {
     max-width: 300px;
     line-height: 1.875;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 0;
     word-wrap: break-word;
     color: #fff; }
 
 .footer-widget.text-var--2 .footer-menu ul.ft-menu-list li a {
   font-family: "Shree_Devanagari_714", sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 0em;
   line-height: 2; }
 
 .footer-widget.text-var--2 .footer-address p {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
   font-family: "Shree_Devanagari_714", sans-serif; }
   .footer-widget.text-var--2 .footer-address p a {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
     font-family: "Shree_Devanagari_714", sans-serif; }
 
@@ -23936,7 +23943,7 @@ Prresentation Area
       -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
       -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
       transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-      font-size: 14px;
+      font-size: 20px;
       color: #ffffff; }
       .copyright .copyright-left ul.bk-copyright-menu li a:hover,
       .copyright .copyright-right ul.bk-copyright-menu li a:hover {
@@ -23950,7 +23957,7 @@ Prresentation Area
 
 .copyright .copyright-right p {
   margin: 0;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 2;
   font-family: "louis_george_caferegular";
@@ -23958,14 +23965,14 @@ Prresentation Area
 
 .copyright.text-var-2 .copyright-left ul.bk-copyright-menu li a {
   font-family: "Shree_Devanagari_714", sans-serif;
-  font-size: 14px; }
+  font-size: 20px; }
 
 .copyright.text-var-2 .copyright-right p {
   font-family: "Shree_Devanagari_714", sans-serif; }
 
 .copyright.copyright--2 .copyright-left p {
   margin: 0;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.86;
   font-family: "Montserrat", sans-serif;
@@ -29778,7 +29785,7 @@ Metro Grid Style 3
       transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1); }
     .preview-grid-metro .portfolio .pv-port-info h5 a {
       color: #222222;
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.39; }
     .preview-grid-metro .portfolio:hover .thumb {
       -webkit-transform: translateY(-20px);
@@ -29820,7 +29827,7 @@ Metro Grid Style 3
   line-height: 1.4; }
 
 .demo-section-title p {
-  font-size: 16px;
+  font-size: 20px;
   width: 730px;
   color: #888888;
   line-height: 1.88;
@@ -29941,7 +29948,7 @@ preview Area
     font-size: 116px; }
   .demo-section-title p {
     margin-bottom: 46px;
-    font-size: 14px; }
+    font-size: 20px; }
   .demo-section-title h2 {
     font-size: 25px; }
   .demo-section-title h1 {
@@ -30053,7 +30060,7 @@ preview Area
   .single-vertical-slide .slide-inner .info h2.heading br {
     display: none; }
   h6.heading-h6.font-16 {
-    font-size: 14px; }
+    font-size: 20px; }
   .brand-default.brand-style--2 .brand {
     min-height: 144px; }
   .section-title--between .title h3,
@@ -30065,7 +30072,7 @@ preview Area
   .portfolio.portfolio_style--2 .port-overlay-info .content {
     padding: 37px 20px; }
   .portfolio.portfolio_style--2 .port-overlay-info .content h3.port-title {
-    font-size: 18px; }
+    font-size: 20px; }
   .one-page-header .header-wrapper .header-left-wrapper {
     padding-left: 30px;
     padding-right: 30px; }
@@ -30080,7 +30087,7 @@ preview Area
   .blog-style--1 .blog-content.blog-position--bottom {
     padding: 30px 18px 10px; }
   .blog-style--1 .blog-content .content h3.the-title {
-    font-size: 16px;
+    font-size: 20px;
     margin: 0 0 13px; }
   .blog-style--1 .blog-content .content ul.meta {
     margin-bottom: 14px; }

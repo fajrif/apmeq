@@ -98,6 +98,7 @@ module ApplicationHelper
 		controller.controller_name == "horses" ||
 		controller.controller_name == "galleries" ||
 		controller.controller_name == "instructors" ||
+		controller.controller_name == "services" ||
 		controller.controller_name == "facilities"
   end
 
