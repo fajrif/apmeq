@@ -2,6 +2,7 @@ class BookingsController < ApplicationController
 
 	def show
     @booking = Booking.new
+		@instructors = Instructor.all
 	end
 
   def create

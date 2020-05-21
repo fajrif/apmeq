@@ -6,7 +6,9 @@
 #
 #   configatron.file.storage = :s3
 configatron.site_name = "APM Equestrian"
-configatron.site_description = "APM Equestrian"
+configatron.site_title = "APM Equestrian Center - Riding School, Horse Stable & Breeding"
+configatron.site_description = "APM Equestrian Center, Tangerang is one of Indonesia's Leading Equestrian Center and Stable. Home to the 2018 ASIAN Games Modern Pentathlon."
+configatron.site_image = "https://i.ibb.co/YBcys6K/apmeq.png"
 configatron.admin_email = "admin@apmequestrian.com"
 configatron.social_facebook_url = "https://www.facebook.com/"
 configatron.social_instagram_url = "https://www.instagram.com/"

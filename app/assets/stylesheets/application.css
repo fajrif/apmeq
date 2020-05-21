@@ -29,6 +29,8 @@
  *= require plyr.css
  *= require style.css
  *= require custom.css
+ *= require material-icon.css
+ *= require bootstrap-material-datetimepicker.css
  *= require_self
 */
 

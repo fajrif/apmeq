@@ -1,7 +1,8 @@
-<div class="brook-pricing-table-area pt--150 pt_md--80 pt_sm--80 bg_color--1">
+<div class="brook-pricing-table-area pt--150 pt_md--80 pt_sm--150 bg_color--1">
 		<div class="container">
 				<!-- Start Choose Area -->
 				<div class="choose-us-area">
+						<%= flash_message %>
 						<div class="row">
 								<div class="col-lg-4 col-md-6 col-sm-6 col-12">
 										<div class="choose-plan-area">
@@ -120,7 +121,7 @@
 													</tr>
 													<tr>
 														<td colspan="3" class="text-center">
-															<a class="brook-btn bk-btn-dark btn-sd-size btn-rounded space-between" style="margin-top:30px;" href="#">Book Now</a>
+															<a href="#" class="brook-btn bk-btn-dark btn-sd-size btn-rounded space-between btn-book" data-member="0" data-toggle="modal" data-target="#modalMadeABook" style="margin-top:30px;">Book Now</a>
 														</td>
 													</tr>
 											</tbody>
@@ -219,7 +220,7 @@
 													</tr>
 													<tr>
 														<td colspan="3" class="text-center">
-															<a class="brook-btn bk-btn-dark btn-sd-size btn-rounded space-between" style="margin-top:30px;" href="#">Book Now</a>
+															<a href="#" class="brook-btn bk-btn-dark btn-sd-size btn-rounded space-between btn-book" data-member="1" data-toggle="modal" data-target="#modalMadeABook" style="margin-top:30px;">Book Now</a>
 														</td>
 													</tr>
 											</tbody>
@@ -331,3 +332,70 @@
 		</div>
 </div>
 <!-- End Pricing Plans -->
+<!-- modal (Inquiry) -->
+<div class="modal fade" id="modalMadeABook" tabindex="-1" role="dialog" aria-label="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="contact-form" >
+					<%= simple_form_for @booking, as: :booking, url: booking_path, html: { method: :post } do |f| %>
+						<div class="row">
+							<input type="hidden" name="booking[as_member]" id="booking_as_member">
+							<div class="col-lg-12">
+								<input name="booking[name]" type="text" placeholder="Name *">
+							</div>
+							<div class="col-lg-12 mt--30">
+								<select name="booking[instructor_id]">
+									<option value="">Select Instructor *</option>
+									<% @instructors.each do |i| %>
+										<option value="<%= i.id %>"><%= i.name %></option>
+									<% end %>
+								</select>
+							</div>
+							<div class="col-lg-12 mt--30">
+								<input name="booking[dob]" id="booking_dob" type="text" placeholder="Date of Birth *">
+							</div>
+							<div class="col-lg-12 mt--30">
+								<input name="booking[date_lesson]" id="booking_date_lesson" type="text" placeholder="Date Lesson *">
+							</div>
+							<div class="col-lg-12 mt--30">
+								<input name="booking[emergency_contact_name]" type="text" placeholder="Emergency contact name">
+							</div>
+							<div class="col-lg-12 mt--30">
+								<input name="booking[emergency_contact_phone]" type="text" placeholder="Emergency contact phone">
+							</div>
+							<div class="col-lg-12 mt--30">
+								<input type="submit" value="Book Now">
+							</div>
+						</div>
+					<% end %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<%= content_for :tail do %>
+	<script>
+		jQuery(document).on('ready page:load', function () {
+			jQuery('#booking_dob').bootstrapMaterialDatePicker({
+				format : 'DD-MM-YYYY',
+				time: false,
+				clearButton: true
+			});
+			jQuery('#booking_date_lesson').bootstrapMaterialDatePicker({
+				format : 'DD-MM-YYYY HH:mm',
+				time: true,
+				clearButton: true
+			});
+		});
+		jQuery(document).on("click", ".brook-btn.btn-book", function () {
+			 var member = jQuery(this).data('member');
+			 jQuery("#modalMadeABook #booking_as_member").val( member );
+		});
+	</script>
+	<style>
+	.table.dtp-picker-days {
+		font-size: initial;
+	}
+	</style>
+<% end %>

@@ -28,3 +28,5 @@
 //= require revolution.extension.slideanims.min.js
 //= require revolution.extension.video.min.js
 //= require revolution.js
+//= require moment-with-locales.min.js
+//= require bootstrap-material-datetimepicker.js
