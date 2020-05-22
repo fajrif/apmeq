@@ -11,7 +11,11 @@ Rails.application.routes.draw do
 		resources :galleries
 		resources :facilities
 		resources :services
-		resources :horses
+		resources :horses do
+			member do
+				delete "image/:image_id" => "horses#delete_image", :as => :delete_image
+			end
+		end
 		resources :instructors
 		resources :testimonials
 		resources :links

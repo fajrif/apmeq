@@ -47,6 +47,13 @@ class Admins::HorsesController < Admins::BaseController
     redirect_to admins_horses_url, :notice => "Successfully destroyed horse."
   end
 
+  def delete_image
+		@horse = Horse.friendly.find(params[:id])
+		@image = ActiveStorage::Blob.find_signed(params[:image_id])
+		@image.attachments.first.purge
+    redirect_to admins_horse_path(@horse), :notice => "Successfully deleted image."
+  end
+
   private
 
   def params_horse

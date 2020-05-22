@@ -21,14 +21,11 @@
 								<div class="blog blog-style--1">
 										<div class="thumb">
 											<%= link_to get_news_path(article) do %>
-												<%= image_tag(article.image.variant(combine_options: { gravity: 'Center', crop: '413x419+0+0' }).processed) %>
+												<%= image_tag(article.image.variant(combine_options: { gravity: 'Center', crop: '400x300+0+0' }).processed) %>
 											<% end %>
 										</div>
 										<div class="blog-content blog-position--bottom">
 												<div class="content">
-														<ul class="meta">
-																<li><%= article.created_at.to_time.strftime("%b %d, %Y") %></li>
-														</ul>
 														<h3 class="the-title">
 															<%= link_to article.title, get_news_path(article) %>
 														</h3>
