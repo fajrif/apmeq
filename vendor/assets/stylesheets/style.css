@@ -22147,9 +22147,14 @@ Header Font Family
   visibility: visible;
   opacity: 1; }
   .popup-mobile-menu-wrapper .popup-mobile-manu .inner {
+		background-color: #000;
     -webkit-transform: none;
     -ms-transform: none;
     transform: none; }
+		.popup-mobile-menu-wrapper .popup-mobile-manu .inner .object-custom-menu li.no-menu > a {
+			font-weight: bold !important;
+			color: #fff;
+		}
 
 .popup-mobile-manu {
   position: fixed;
